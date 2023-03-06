@@ -141,7 +141,7 @@ class Spirit_Of_Football_Press {
 
 		// Init objects.
 		$this->coverage = new Spirit_Of_Football_Press_Coverage( $this );
-		$this->resource = new Spirit_Of_Football_Press_Resource( $this );
+		//$this->resource = new Spirit_Of_Football_Press_Resource( $this );
 
 	}
 
