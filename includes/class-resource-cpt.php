@@ -121,7 +121,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 		add_action( 'sof_press/deactivate', [ $this, 'deactivate' ] );
 
 		// Always create post type.
-		add_action( 'init', [ $this, 'post_type_create' ], 30 );
+		add_action( 'init', [ $this, 'post_type_create' ] );
 
 		// Make sure our feedback is appropriate.
 		add_filter( 'post_updated_messages', [ $this, 'post_type_messages' ] );
@@ -130,12 +130,12 @@ class Spirit_Of_Football_Press_Resource_CPT {
 		add_filter( 'enter_title_here', [ $this, 'post_type_title' ] );
 
 		// Create primary taxonomy.
-		add_action( 'init', [ $this, 'taxonomy_create' ], 30 );
+		add_action( 'init', [ $this, 'taxonomy_create' ] );
 		add_filter( 'wp_terms_checklist_args', [ $this, 'taxonomy_fix_metabox' ], 10, 2 );
 		add_action( 'restrict_manage_posts', [ $this, 'taxonomy_filter_post_type' ] );
 
 		// Create alternative taxonomy.
-		add_action( 'init', [ $this, 'taxonomy_alt_create' ], 30 );
+		add_action( 'init', [ $this, 'taxonomy_alt_create' ] );
 		add_filter( 'wp_terms_checklist_args', [ $this, 'taxonomy_alt_fix_metabox' ], 10, 2 );
 		add_action( 'restrict_manage_posts', [ $this, 'taxonomy_alt_filter_post_type' ] );
 
@@ -218,7 +218,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 			'query_var' => true,
 			'capability_type' => 'post',
 			'hierarchical' => false,
-			'menu_position' => 20,
+			'menu_position' => 30,
 			'map_meta_cap' => true,
 
 			// Rewrite.
