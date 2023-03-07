@@ -226,7 +226,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 			'min' => 0,
 			'max' => 0,
 			'layout' => 'block',
-			'button_label' => __( 'Add Press Resource File', 'civicrm-wp-profile-sync' ),
+			'button_label' => __( 'Add Press Resource File', 'sof-press' ),
 			'sub_fields' => [],
 		];
 
