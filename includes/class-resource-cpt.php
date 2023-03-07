@@ -214,7 +214,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 			'show_in_nav_menus' => true,
 			'show_in_menu' => true,
 			'show_in_admin_bar' => true,
-			'has_archive' => false,
+			'has_archive' => true,
 			'query_var' => true,
 			'capability_type' => 'post',
 			'hierarchical' => false,
@@ -223,7 +223,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 
 			// Rewrite.
 			'rewrite' => [
-				'slug' => 'press',
+				'slug' => 'press-resources',
 				'with_front' => false,
 			],
 
@@ -396,7 +396,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 
 			// Rewrite rules.
 			'rewrite' => [
-				'slug' => 'press-item-types',
+				'slug' => 'press-resources/types',
 			],
 
 			// Show column in wp-admin.
@@ -516,7 +516,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 
 			// Rewrite rules.
 			'rewrite' => [
-				'slug' => 'press-resource-tags',
+				'slug' => 'press-resources/tags',
 			],
 
 			// Show column in wp-admin.

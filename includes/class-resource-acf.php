@@ -169,96 +169,12 @@ class Spirit_Of_Football_Press_Resource_ACF {
 
 		// Define Field.
 		$field = [
-			'type' => 'text',
-			'name' => 'publisher',
-			'parent' => $this->group_prefix . 'resource',
-			'key' => $this->field_resource_prefix . 'publisher',
-			'label' => __( 'Publisher', 'sof-press' ),
-			'instructions' => __( 'Who published this Press Resource? Examples: CNN, BBC, etc.', 'sof-press' ),
-			'default_value' => '',
-			'placeholder' => '',
-		];
-
-		/*
-		$e = new \Exception();
-		$trace = $e->getTraceAsString();
-		error_log( print_r( [
-			'method' => __METHOD__,
-			'field' => $field,
-			//'backtrace' => $trace,
-		], true ) );
-		*/
-
-		// Now add Field.
-		acf_add_local_field( $field );
-
-		// Define Field.
-		$field = [
-			'type' => 'url',
-			'name' => 'link',
-			'parent' => $this->group_prefix . 'resource',
-			'key' => $this->field_resource_prefix . 'link',
-			'label' => __( 'Link', 'sof-press' ),
-			'instructions' => __( 'Link to the published Press Resource.', 'sof-press' ),
-			'wrapper' => [
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			],
-		];
-
-		/*
-		$e = new \Exception();
-		$trace = $e->getTraceAsString();
-		error_log( print_r( [
-			'method' => __METHOD__,
-			'field' => $field,
-			//'backtrace' => $trace,
-		], true ) );
-		*/
-
-		// Now add Field.
-		acf_add_local_field( $field );
-
-		// Define Field.
-		$field = [
-			'type' => 'date_picker',
-			'name' => 'date',
-			'parent' => $this->group_prefix . 'resource',
-			'key' => $this->field_resource_prefix . 'date',
-			'label' => __( 'Date Published', 'sof-press' ),
-			'instructions' => __( 'Date of the Press Resource.', 'sof-press' ),
-			'display_format' => 'd/m/Y',
-			'return_format' => 'd/m/Y',
-			'first_day' => 1,
-			'wrapper' => [
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			],
-		];
-
-		/*
-		$e = new \Exception();
-		$trace = $e->getTraceAsString();
-		error_log( print_r( [
-			'method' => __METHOD__,
-			'field' => $field,
-			//'backtrace' => $trace,
-		], true ) );
-		*/
-
-		// Now add Field.
-		acf_add_local_field( $field );
-
-		// Define Field.
-		$field = [
 			'type' => 'wysiwyg',
 			'name' => 'about',
 			'parent' => $this->group_prefix . 'resource',
 			'key' => $this->field_resource_prefix . 'about',
 			'label' => __( 'About this Press Resource', 'sof-press' ),
-			'instructions' => __( 'If you need to describe the Press Resource, use this field.', 'sof-press' ),
+			'instructions' => __( 'If you need a general description of this Press Resource, use this field.', 'sof-press' ),
 			'default_value' => '',
 			'placeholder' => '',
 		];
@@ -277,7 +193,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 			'required' => 0,
 			'conditional_logic' => 0,
 			'preview_size' => 'medium',
-			'acfe_thumbnail' => 0,
+			'acfe_thumbnail' => 1,
 			//'uploader' => 'basic',
 			//'min_size' => 0,
 			//'max_size' => $this->civicrm->attachment->field_max_size_get(),
@@ -288,6 +204,74 @@ class Spirit_Of_Football_Press_Resource_ACF {
 
 		// Now add Field.
 		acf_add_local_field( $field );
+
+		// Define Repeater Field.
+		$repeater = [
+			'type' => 'repeater',
+			'name' => 'files',
+			'parent' => $this->group_prefix . 'resource',
+			'key' => $this->field_resource_prefix . 'file_repeater',
+			'label' => __( 'Press Resource Files', 'sof-press' ),
+			'instructions' => __( 'Downloadable Files for this Press Resource.', 'sof-press' ),
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => [
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			],
+			'acfe_permissions' => '',
+			'acfe_repeater_stylised_button' => 0,
+			'collapsed' => $this->field_resource_prefix . 'file',
+			'min' => 0,
+			'max' => 0,
+			'layout' => 'block',
+			'button_label' => __( 'Add Press Resource File', 'civicrm-wp-profile-sync' ),
+			'sub_fields' => [],
+		];
+
+		// Define File Field.
+		$repeater['sub_fields'][] = [
+			'type' => 'file',
+			'name' => 'file',
+			'key' => $this->field_resource_prefix . 'file',
+			'label' => __( 'File', 'sof-press' ),
+			'instructions' => __( 'The Downloadable File itself.', 'sof-press' ),
+			'required' => 0,
+			'conditional_logic' => 0,
+			'acfe_thumbnail' => 0,
+			'return_format' => 'array',
+			'mime_types' => '',
+			'library' => 'all',
+			'wrapper' => [
+				'width' => '50',
+				'class' => '',
+				'id' => '',
+			],
+		];
+
+		// Define File Preview Field.
+		$repeater['sub_fields'][] = [
+			'type' => 'image',
+			'name' => 'file_preview',
+			'key' => $this->field_resource_prefix . 'file_preview',
+			'label' => __( 'File Preview', 'sof-press' ),
+			'instructions' => __( 'An optional Image that shows a preview of the Downloadable File.', 'sof-press' ),
+			'required' => 0,
+			'conditional_logic' => 0,
+			'acfe_thumbnail' => 0,
+			'return_format' => 'array',
+			'mime_types' => '',
+			'library' => 'all',
+			'wrapper' => [
+				'width' => '50',
+				'class' => '',
+				'id' => '',
+			],
+		];
+
+		// Now add Field.
+		acf_add_local_field( $repeater );
 
 	}
 
