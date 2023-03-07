@@ -287,7 +287,7 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 			'parent' => $this->group_prefix . 'item',
 			'key' => $this->field_item_prefix . 'image',
 			'label' => __( 'Press Item Image', 'sof-press' ),
-			'instructions' => __( 'Feature Image of the Press Item.', 'sof-press' ),
+			'instructions' => __( 'An Image of the Press Item.', 'sof-press' ),
 			'required' => 0,
 			'conditional_logic' => 0,
 			'preview_size' => 'medium',
