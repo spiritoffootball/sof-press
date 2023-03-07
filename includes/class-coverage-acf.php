@@ -24,7 +24,7 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $plugin The plugin object.
+	 * @var object
 	 */
 	public $plugin;
 
@@ -33,7 +33,7 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $coverage The Coverage loader object.
+	 * @var object
 	 */
 	public $coverage;
 
@@ -42,7 +42,7 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $group_prefix The prefix of the ACF Field Group.
+	 * @var string
 	 */
 	public $group_prefix = 'group_sof_press_';
 
@@ -51,7 +51,7 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $field_item_prefix The unique prefix of the Press Item ACF Fields.
+	 * @var string
 	 */
 	public $field_item_prefix = 'field_sof_press_item_';
 

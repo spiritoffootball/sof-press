@@ -24,16 +24,25 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $plugin The plugin object.
+	 * @var object
 	 */
 	public $plugin;
+
+	/**
+	 * Resource loader.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @var object
+	 */
+	public $resource;
 
 	/**
 	 * ACF Field Group prefix.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $group_prefix The prefix of the ACF Field Group.
+	 * @var string
 	 */
 	public $group_prefix = 'group_sof_press_';
 
@@ -42,7 +51,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $field_resource_prefix The unique prefix of the Press Resource ACF Fields.
+	 * @var string
 	 */
 	public $field_resource_prefix = 'field_sof_press_resource_';
 

@@ -47,7 +47,7 @@ class Spirit_Of_Football_Press {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $coverage The Coverage loader object.
+	 * @var object
 	 */
 	public $coverage;
 
@@ -56,7 +56,7 @@ class Spirit_Of_Football_Press {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $resource The Resource loader object.
+	 * @var object
 	 */
 	public $resource;
 

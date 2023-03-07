@@ -24,25 +24,25 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $plugin The plugin object.
+	 * @var object
 	 */
 	public $plugin;
 
 	/**
-	 * Custom Post Type object.
+	 * Resource loader.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $cpt The Custom Post Type object.
+	 * @var object
 	 */
-	public $cpt;
+	public $resource;
 
 	/**
 	 * Custom Post Type name.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $cpt The name of the Custom Post Type.
+	 * @var string
 	 */
 	public $post_type_name = 'press_resource';
 
@@ -51,7 +51,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $cpt The REST base of the Custom Post Type.
+	 * @var string
 	 */
 	public $post_type_rest_base = 'press-resources';
 
@@ -60,7 +60,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var str $taxonomy_name The name of the Custom Taxonomy.
+	 * @var string
 	 */
 	public $taxonomy_name = 'press-resource-type';
 
@@ -69,7 +69,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var str $taxonomy_rest_base The REST base of the Custom Taxonomy.
+	 * @var string
 	 */
 	public $taxonomy_rest_base = 'press-resource-types';
 
@@ -78,7 +78,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var str $taxonomy_alt_name The name of the alternative Custom Taxonomy.
+	 * @var string
 	 */
 	public $taxonomy_alt_name = 'press-resource-tag';
 
@@ -87,7 +87,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var str $taxonomy_alt_rest_base The REST base of the alternative Custom Taxonomy.
+	 * @var string
 	 */
 	public $taxonomy_alt_rest_base = 'press-resource-tags';
 

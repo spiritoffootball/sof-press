@@ -24,7 +24,7 @@ class Spirit_Of_Football_Press_Coverage {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $plugin The plugin object.
+	 * @var object
 	 */
 	public $plugin;
 
@@ -33,7 +33,7 @@ class Spirit_Of_Football_Press_Coverage {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $cpt The Custom Post Type object.
+	 * @var object
 	 */
 	public $cpt;
 
@@ -42,7 +42,7 @@ class Spirit_Of_Football_Press_Coverage {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $acf The ACF object.
+	 * @var object
 	 */
 	public $acf;
 

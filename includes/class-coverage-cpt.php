@@ -24,7 +24,7 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $plugin The plugin object.
+	 * @var object
 	 */
 	public $plugin;
 
@@ -33,7 +33,7 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $coverage The Coverage loader object.
+	 * @var object
 	 */
 	public $coverage;
 
@@ -42,7 +42,7 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $cpt The name of the Custom Post Type.
+	 * @var string
 	 */
 	public $post_type_name = 'press_coverage';
 
@@ -51,7 +51,7 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object $cpt The REST base of the Custom Post Type.
+	 * @var string
 	 */
 	public $post_type_rest_base = 'press-items';
 
@@ -60,7 +60,7 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var str $taxonomy_name The name of the Custom Taxonomy.
+	 * @var string
 	 */
 	public $taxonomy_name = 'press-item-type';
 
@@ -69,7 +69,7 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var str $taxonomy_rest_base The REST base of the Custom Taxonomy.
+	 * @var string
 	 */
 	public $taxonomy_rest_base = 'press-item-types';
 
@@ -78,7 +78,7 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var str $taxonomy_alt_name The name of the alternative Custom Taxonomy.
+	 * @var string
 	 */
 	public $taxonomy_alt_name = 'press-item-tag';
 
@@ -87,7 +87,7 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var str $taxonomy_alt_rest_base The REST base of the alternative Custom Taxonomy.
+	 * @var string
 	 */
 	public $taxonomy_alt_rest_base = 'press-item-tags';
 
