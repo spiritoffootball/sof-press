@@ -186,6 +186,7 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 			'instructions' => __( 'Who published this Press Item? Examples: CNN, BBC, etc.', 'sof-press' ),
 			'default_value' => '',
 			'placeholder' => '',
+			'required' => 1,
 		];
 
 		/*
