@@ -6,7 +6,7 @@
  * Description:       Provides "Press" functionality for the Spirit of Football website.
  * Plugin URI:        https://github.com/spiritoffootball/sof-press
  * GitHub Plugin URI: https://github.com/spiritoffootball/sof-press
- * Version:           1.0.1
+ * Version:           1.0.2a
  * Author:            Christian Wach
  * Author URI:        https://haystack.co.uk
  * Text Domain:       sof-press
@@ -19,7 +19,7 @@
 defined( 'ABSPATH' ) || exit;
 
 // Set our version here.
-define( 'SOF_PRESS_VERSION', '1.0.1' );
+define( 'SOF_PRESS_VERSION', '1.0.2a' );
 
 // Store reference to this file.
 if ( ! defined( 'SOF_PRESS_FILE' ) ) {
