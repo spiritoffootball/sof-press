@@ -1,36 +1,41 @@
-# Copyright (C) 2023 Christian Wach
+# Copyright (C) 2024 Christian Wach
 # This file is distributed under the same license as the SOF Press plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: SOF Press 1.0.0a\n"
+"Project-Id-Version: SOF Press 1.0.1a\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sof-press\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-03-07T11:10:38+00:00\n"
+"POT-Creation-Date: 2024-04-15T13:40:38+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.7.1\n"
+"X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: sof-press\n"
 
 #. Plugin Name of the plugin
+#: sof-press.php
 msgid "SOF Press"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: sof-press.php
 msgid "https://github.com/spiritoffootball/sof-press"
 msgstr ""
 
 #. Description of the plugin
+#: sof-press.php
 msgid "Provides \"Press\" functionality for the Spirit of Football website."
 msgstr ""
 
 #. Author of the plugin
+#: sof-press.php
 msgid "Christian Wach"
 msgstr ""
 
 #. Author URI of the plugin
+#: sof-press.php
 msgid "https://haystack.co.uk"
 msgstr ""
 
@@ -46,43 +51,43 @@ msgstr ""
 msgid "Who published this Press Item? Examples: CNN, BBC, etc."
 msgstr ""
 
-#: includes/class-coverage-acf.php:210
+#: includes/class-coverage-acf.php:211
 msgid "Link"
 msgstr ""
 
-#: includes/class-coverage-acf.php:211
+#: includes/class-coverage-acf.php:212
 msgid "Link to the published Press Item."
 msgstr ""
 
-#: includes/class-coverage-acf.php:238
+#: includes/class-coverage-acf.php:239
 msgid "Date Published"
 msgstr ""
 
-#: includes/class-coverage-acf.php:239
+#: includes/class-coverage-acf.php:240
 msgid "Date of the Press Item."
 msgstr ""
 
-#: includes/class-coverage-acf.php:269
+#: includes/class-coverage-acf.php:270
 msgid "About this Press Item"
 msgstr ""
 
-#: includes/class-coverage-acf.php:270
+#: includes/class-coverage-acf.php:271
 msgid "If you need to describe the Press Item, use this field."
 msgstr ""
 
-#: includes/class-coverage-acf.php:289
+#: includes/class-coverage-acf.php:290
 msgid "Press Item Image"
 msgstr ""
 
-#: includes/class-coverage-acf.php:290
-msgid "Feature Image of the Press Item."
-msgstr ""
-
-#: includes/class-coverage-acf.php:313
-msgid "Press Item File"
+#: includes/class-coverage-acf.php:291
+msgid "An Image of the Press Item."
 msgstr ""
 
 #: includes/class-coverage-acf.php:314
+msgid "Press Item File"
+msgstr ""
+
+#: includes/class-coverage-acf.php:315
 msgid "Downloadable File for the Press Item."
 msgstr ""
 
@@ -246,107 +251,107 @@ msgstr ""
 
 #. translators: %s: The plural name of the taxonomy terms.
 #: includes/class-coverage-cpt.php:466
-#: includes/class-coverage-cpt.php:586
+#: includes/class-coverage-cpt.php:589
 #: includes/class-resource-cpt.php:466
-#: includes/class-resource-cpt.php:586
+#: includes/class-resource-cpt.php:589
 msgid "Show All %s"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:503
+#: includes/class-coverage-cpt.php:506
 msgctxt "taxonomy general name"
 msgid "Press Item Tags"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:504
+#: includes/class-coverage-cpt.php:507
 msgctxt "taxonomy singular name"
 msgid "Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:505
+#: includes/class-coverage-cpt.php:508
 msgid "Search Press Item Tags"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:506
+#: includes/class-coverage-cpt.php:509
 msgid "All Press Item Tags"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:507
+#: includes/class-coverage-cpt.php:510
 msgid "Parent Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:508
+#: includes/class-coverage-cpt.php:511
 msgid "Parent Press Item Tag:"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:509
+#: includes/class-coverage-cpt.php:512
 msgid "Edit Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:510
+#: includes/class-coverage-cpt.php:513
 msgid "Update Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:511
+#: includes/class-coverage-cpt.php:514
 msgid "Add New Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:512
+#: includes/class-coverage-cpt.php:515
 msgid "New Press Item Tag Name"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:513
+#: includes/class-coverage-cpt.php:516
 msgid "Press Item Tags"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:514
+#: includes/class-coverage-cpt.php:517
 msgid "No Press Item Tags found"
 msgstr ""
 
-#: includes/class-resource-acf.php:130
+#: includes/class-resource-acf.php:139
 msgid "Press Resource Details"
 msgstr ""
 
-#: includes/class-resource-acf.php:176
+#: includes/class-resource-acf.php:175
 msgid "About this Press Resource"
 msgstr ""
 
-#: includes/class-resource-acf.php:177
+#: includes/class-resource-acf.php:176
 msgid "If you need a general description of this Press Resource, use this field."
 msgstr ""
 
-#: includes/class-resource-acf.php:191
+#: includes/class-resource-acf.php:190
 msgid "Press Resource Image"
 msgstr ""
 
-#: includes/class-resource-acf.php:192
+#: includes/class-resource-acf.php:191
 msgid "Feature Image of the Press Resource."
 msgstr ""
 
-#: includes/class-resource-acf.php:214
+#: includes/class-resource-acf.php:213
 msgid "Press Resource Files"
 msgstr ""
 
-#: includes/class-resource-acf.php:215
+#: includes/class-resource-acf.php:214
 msgid "Downloadable Files for this Press Resource."
 msgstr ""
 
-#: includes/class-resource-acf.php:229
+#: includes/class-resource-acf.php:228
 msgid "Add Press Resource File"
 msgstr ""
 
-#: includes/class-resource-acf.php:238
+#: includes/class-resource-acf.php:237
 msgid "File"
 msgstr ""
 
-#: includes/class-resource-acf.php:239
+#: includes/class-resource-acf.php:238
 msgid "The Downloadable File itself."
 msgstr ""
 
-#: includes/class-resource-acf.php:258
+#: includes/class-resource-acf.php:257
 msgid "File Preview"
 msgstr ""
 
-#: includes/class-resource-acf.php:259
+#: includes/class-resource-acf.php:258
 msgid "An optional Image that shows a preview of the Downloadable File."
 msgstr ""
 
@@ -487,52 +492,52 @@ msgstr ""
 msgid "No Press Resource Types found"
 msgstr ""
 
-#: includes/class-resource-cpt.php:503
+#: includes/class-resource-cpt.php:506
 msgctxt "taxonomy general name"
 msgid "Press Resource Tags"
 msgstr ""
 
-#: includes/class-resource-cpt.php:504
+#: includes/class-resource-cpt.php:507
 msgctxt "taxonomy singular name"
 msgid "Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:505
+#: includes/class-resource-cpt.php:508
 msgid "Search Press Resource Tags"
 msgstr ""
 
-#: includes/class-resource-cpt.php:506
+#: includes/class-resource-cpt.php:509
 msgid "All Press Resource Tags"
 msgstr ""
 
-#: includes/class-resource-cpt.php:507
+#: includes/class-resource-cpt.php:510
 msgid "Parent Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:508
+#: includes/class-resource-cpt.php:511
 msgid "Parent Press Resource Tag:"
 msgstr ""
 
-#: includes/class-resource-cpt.php:509
+#: includes/class-resource-cpt.php:512
 msgid "Edit Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:510
+#: includes/class-resource-cpt.php:513
 msgid "Update Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:511
+#: includes/class-resource-cpt.php:514
 msgid "Add New Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:512
+#: includes/class-resource-cpt.php:515
 msgid "New Press Resource Tag Name"
 msgstr ""
 
-#: includes/class-resource-cpt.php:513
+#: includes/class-resource-cpt.php:516
 msgid "Press Resource Tags"
 msgstr ""
 
-#: includes/class-resource-cpt.php:514
+#: includes/class-resource-cpt.php:517
 msgid "No Press Resource Tags found"
 msgstr ""
