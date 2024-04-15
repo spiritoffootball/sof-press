@@ -24,7 +24,7 @@ class Spirit_Of_Football_Press_Resource {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var Spirit_Of_Football_Press
 	 */
 	public $plugin;
 
@@ -33,7 +33,7 @@ class Spirit_Of_Football_Press_Resource {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var Spirit_Of_Football_Press_Resource_CPT
 	 */
 	public $cpt;
 
@@ -42,7 +42,7 @@ class Spirit_Of_Football_Press_Resource {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var Spirit_Of_Football_Press_Resource_ACF
 	 */
 	public $acf;
 

@@ -24,7 +24,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var Spirit_Of_Football_Press
 	 */
 	public $plugin;
 
@@ -33,7 +33,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var Spirit_Of_Football_Press_Resource
 	 */
 	public $resource;
 
@@ -102,7 +102,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 
 		// Store references.
 		$this->resource = $parent;
-		$this->plugin = $parent->plugin;
+		$this->plugin   = $parent->plugin;
 
 		// Init when this plugin is loaded.
 		add_action( 'sof_press/resource/loaded', [ $this, 'register_hooks' ] );
@@ -189,7 +189,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 		$args = [
 
 			// Labels.
-			'labels' => [
+			'labels'              => [
 				'name'               => __( 'Press Resources', 'sof-press' ),
 				'singular_name'      => __( 'Press Resource', 'sof-press' ),
 				'add_new'            => __( 'Add New', 'sof-press' ),
@@ -205,38 +205,38 @@ class Spirit_Of_Football_Press_Resource_CPT {
 			],
 
 			// Defaults.
-			'menu_icon' => 'dashicons-download',
-			'description' => __( 'A press item post type', 'sof-press' ),
-			'public' => true,
-			'publicly_queryable' => true,
+			'menu_icon'           => 'dashicons-download',
+			'description'         => __( 'A press item post type', 'sof-press' ),
+			'public'              => true,
+			'publicly_queryable'  => true,
 			'exclude_from_search' => false,
-			'show_ui' => true,
-			'show_in_nav_menus' => true,
-			'show_in_menu' => true,
-			'show_in_admin_bar' => true,
-			'has_archive' => true,
-			'query_var' => true,
-			'capability_type' => 'post',
-			'hierarchical' => false,
-			'menu_position' => 30,
-			'map_meta_cap' => true,
+			'show_ui'             => true,
+			'show_in_nav_menus'   => true,
+			'show_in_menu'        => true,
+			'show_in_admin_bar'   => true,
+			'has_archive'         => true,
+			'query_var'           => true,
+			'capability_type'     => 'post',
+			'hierarchical'        => false,
+			'menu_position'       => 30,
+			'map_meta_cap'        => true,
 
 			// Rewrite.
-			'rewrite' => [
-				'slug' => 'press-resources',
+			'rewrite'             => [
+				'slug'       => 'press-resources',
 				'with_front' => false,
 			],
 
 			// Supports.
-			'supports' => [
+			'supports'            => [
 				'title',
 				'editor',
 				'excerpt',
 			],
 
 			// REST setup.
-			'show_in_rest' => true,
-			'rest_base' => $this->post_type_rest_base,
+			'show_in_rest'        => true,
+			'rest_base'           => $this->post_type_rest_base,
 
 		];
 
@@ -265,23 +265,23 @@ class Spirit_Of_Football_Press_Resource_CPT {
 		$messages[ $this->post_type_name ] = [
 
 			// Unused - messages start at index 1.
-			0 => '',
+			0  => '',
 
 			// Item updated.
-			1 => sprintf(
+			1  => sprintf(
 				/* translators: %s: The permalink. */
 				__( 'Press Resource updated. <a href="%s">View Press Resource</a>', 'sof-press' ),
 				esc_url( get_permalink( $post_ID ) )
 			),
 
 			// Custom fields.
-			2 => __( 'Custom field updated.', 'sof-press' ),
-			3 => __( 'Custom field deleted.', 'sof-press' ),
-			4 => __( 'Press Resource updated.', 'sof-press' ),
+			2  => __( 'Custom field updated.', 'sof-press' ),
+			3  => __( 'Custom field deleted.', 'sof-press' ),
+			4  => __( 'Press Resource updated.', 'sof-press' ),
 
 			// Item restored to a revision.
 			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
-			5 => isset( $_GET['revision'] ) ?
+			5  => isset( $_GET['revision'] ) ?
 
 				// Revision text.
 				sprintf(
@@ -295,24 +295,24 @@ class Spirit_Of_Football_Press_Resource_CPT {
 				false,
 
 			// Item published.
-			6 => sprintf(
+			6  => sprintf(
 				/* translators: %s: The permalink. */
 				__( 'Press Resource published. <a href="%s">View Press Resource</a>', 'sof-press' ),
 				esc_url( get_permalink( $post_ID ) )
 			),
 
 			// Item saved.
-			7 => __( 'Press Resource saved.', 'sof-press' ),
+			7  => __( 'Press Resource saved.', 'sof-press' ),
 
 			// Item submitted.
-			8 => sprintf(
+			8  => sprintf(
 				/* translators: %s: The permalink. */
 				__( 'Press Resource submitted. <a target="_blank" href="%s">Preview Press Resource</a>', 'sof-press' ),
 				esc_url( add_query_arg( 'preview', 'true', get_permalink( $post_ID ) ) )
 			),
 
 			// Item scheduled.
-			9 => sprintf(
+			9  => sprintf(
 				/* translators: 1: The date, 2: The permalink. */
 				__( 'Press Resource scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview Press Resource</a>', 'sof-press' ),
 				/* translators: Publish box date format - see https://php.net/date */
@@ -345,7 +345,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	public function post_type_title( $title ) {
 
 		// Bail if not our post type.
-		if ( $this->post_type_name !== get_post_type() ) {
+		if ( get_post_type() !== $this->post_type_name ) {
 			return $title;
 		}
 
@@ -376,10 +376,10 @@ class Spirit_Of_Football_Press_Resource_CPT {
 		$args = [
 
 			// Same as "category".
-			'hierarchical' => true,
+			'hierarchical'      => true,
 
 			// Labels.
-			'labels' => [
+			'labels'            => [
 				'name'              => _x( 'Press Resource Types', 'taxonomy general name', 'sof-press' ),
 				'singular_name'     => _x( 'Press Resource Type', 'taxonomy singular name', 'sof-press' ),
 				'search_items'      => __( 'Search Press Resource Types', 'sof-press' ),
@@ -395,17 +395,17 @@ class Spirit_Of_Football_Press_Resource_CPT {
 			],
 
 			// Rewrite rules.
-			'rewrite' => [
+			'rewrite'           => [
 				'slug' => 'press-resources/types',
 			],
 
 			// Show column in wp-admin.
 			'show_admin_column' => true,
-			'show_ui' => true,
+			'show_ui'           => true,
 
 			// REST setup.
-			'show_in_rest' => true,
-			'rest_base' => $this->taxonomy_rest_base,
+			'show_in_rest'      => true,
+			'rest_base'         => $this->taxonomy_rest_base,
 
 		];
 
@@ -425,7 +425,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 * @since 1.0.0
 	 *
 	 * @param array $args The existing arguments.
-	 * @param int $post_id The WordPress post ID.
+	 * @param int   $post_id The WordPress post ID.
 	 */
 	public function taxonomy_fix_metabox( $args, $post_id ) {
 
@@ -453,27 +453,30 @@ class Spirit_Of_Football_Press_Resource_CPT {
 		global $typenow;
 
 		// Bail if not our post type.
-		if ( $typenow != $this->post_type_name ) {
+		if ( $typenow !== $this->post_type_name ) {
 			return;
 		}
 
 		// Get tax object.
 		$taxonomy = get_taxonomy( $this->taxonomy_name );
 
-		// Show a dropdown.
-		wp_dropdown_categories( [
+		// Build args.
+		$args = [
 			/* translators: %s: The plural name of the taxonomy terms. */
 			'show_option_all' => sprintf( __( 'Show All %s', 'sof-press' ), $taxonomy->label ),
-			'taxonomy' => $this->taxonomy_name,
-			'name' => $this->taxonomy_name,
-			'orderby' => 'name',
+			'taxonomy'        => $this->taxonomy_name,
+			'name'            => $this->taxonomy_name,
+			'orderby'         => 'name',
 			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification.Recommended
-			'selected' => isset( $_GET[ $this->taxonomy_name ] ) ? wp_unslash( $_GET[ $this->taxonomy_name ] ) : '',
-			'show_count' => true,
-			'hide_empty' => true,
-			'value_field' => 'slug',
-			'hierarchical' => 1,
-		] );
+			'selected'        => isset( $_GET[ $this->taxonomy_name ] ) ? wp_unslash( $_GET[ $this->taxonomy_name ] ) : '',
+			'show_count'      => true,
+			'hide_empty'      => true,
+			'value_field'     => 'slug',
+			'hierarchical'    => 1,
+		];
+
+		// Show a dropdown.
+		wp_dropdown_categories( $args );
 
 	}
 
@@ -496,10 +499,10 @@ class Spirit_Of_Football_Press_Resource_CPT {
 		$args = [
 
 			// Same as "category".
-			'hierarchical' => true,
+			'hierarchical'      => true,
 
 			// Labels.
-			'labels' => [
+			'labels'            => [
 				'name'              => _x( 'Press Resource Tags', 'taxonomy general name', 'sof-press' ),
 				'singular_name'     => _x( 'Press Resource Tag', 'taxonomy singular name', 'sof-press' ),
 				'search_items'      => __( 'Search Press Resource Tags', 'sof-press' ),
@@ -515,17 +518,17 @@ class Spirit_Of_Football_Press_Resource_CPT {
 			],
 
 			// Rewrite rules.
-			'rewrite' => [
+			'rewrite'           => [
 				'slug' => 'press-resources/tags',
 			],
 
 			// Show column in wp-admin.
 			'show_admin_column' => true,
-			'show_ui' => true,
+			'show_ui'           => true,
 
 			// REST setup.
-			'show_in_rest' => true,
-			'rest_base' => $this->taxonomy_alt_rest_base,
+			'show_in_rest'      => true,
+			'rest_base'         => $this->taxonomy_alt_rest_base,
 
 		];
 
@@ -545,7 +548,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 * @since 1.0.0
 	 *
 	 * @param array $args The existing arguments.
-	 * @param int $post_id The WordPress post ID.
+	 * @param int   $post_id The WordPress post ID.
 	 */
 	public function taxonomy_alt_fix_metabox( $args, $post_id ) {
 
@@ -573,27 +576,30 @@ class Spirit_Of_Football_Press_Resource_CPT {
 		global $typenow;
 
 		// Bail if not our post type.
-		if ( $typenow != $this->post_type_name ) {
+		if ( $typenow !== $this->post_type_name ) {
 			return;
 		}
 
 		// Get tax object.
 		$taxonomy = get_taxonomy( $this->taxonomy_alt_name );
 
-		// Show a dropdown.
-		wp_dropdown_categories( [
+		// Build args.
+		$args = [
 			/* translators: %s: The plural name of the taxonomy terms. */
 			'show_option_all' => sprintf( __( 'Show All %s', 'sof-press' ), $taxonomy->label ),
-			'taxonomy' => $this->taxonomy_alt_name,
-			'name' => $this->taxonomy_alt_name,
-			'orderby' => 'name',
+			'taxonomy'        => $this->taxonomy_alt_name,
+			'name'            => $this->taxonomy_alt_name,
+			'orderby'         => 'name',
 			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification.Recommended
-			'selected' => isset( $_GET[ $this->taxonomy_alt_name ] ) ? wp_unslash( $_GET[ $this->taxonomy_alt_name ] ) : '',
-			'show_count' => true,
-			'hide_empty' => true,
-			'value_field' => 'slug',
-			'hierarchical' => 1,
-		] );
+			'selected'        => isset( $_GET[ $this->taxonomy_alt_name ] ) ? wp_unslash( $_GET[ $this->taxonomy_alt_name ] ) : '',
+			'show_count'      => true,
+			'hide_empty'      => true,
+			'value_field'     => 'slug',
+			'hierarchical'    => 1,
+		];
+
+		// Show a dropdown.
+		wp_dropdown_categories( $args );
 
 	}
 

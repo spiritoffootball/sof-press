@@ -1,14 +1,16 @@
 <?php
 /**
- * Plugin Name: SOF Press
- * Plugin URI: https://github.com/spiritoffootball/sof-press
+ * SOF Press
+ *
+ * Plugin Name:       SOF Press
+ * Description:       Provides "Press" functionality for the Spirit of Football website.
+ * Plugin URI:        https://github.com/spiritoffootball/sof-press
  * GitHub Plugin URI: https://github.com/spiritoffootball/sof-press
- * Description: Provides "Press" functionality for the Spirit of Football website.
- * Author: Christian Wach
- * Version: 1.0.1a
- * Author URI: https://haystack.co.uk
- * Text Domain: sof-press
- * Domain Path: /languages
+ * Version:           1.0.1a
+ * Author:            Christian Wach
+ * Author URI:        https://haystack.co.uk
+ * Text Domain:       sof-press
+ * Domain Path:       /languages
  *
  * @package Spirit_Of_Football_Press
  */
@@ -28,6 +30,7 @@ if ( ! defined( 'SOF_PRESS_FILE' ) ) {
 if ( ! defined( 'SOF_PRESS_URL' ) ) {
 	define( 'SOF_PRESS_URL', plugin_dir_url( SOF_PRESS_FILE ) );
 }
+
 // Store PATH to this plugin's directory.
 if ( ! defined( 'SOF_PRESS_PATH' ) ) {
 	define( 'SOF_PRESS_PATH', plugin_dir_path( SOF_PRESS_FILE ) );
@@ -47,7 +50,7 @@ class Spirit_Of_Football_Press {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var Spirit_Of_Football_Press_Coverage
 	 */
 	public $coverage;
 
@@ -56,7 +59,7 @@ class Spirit_Of_Football_Press {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var Spirit_Of_Football_Press_Resource
 	 */
 	public $resource;
 
@@ -81,7 +84,7 @@ class Spirit_Of_Football_Press {
 
 		// Only do this once.
 		static $done;
-		if ( isset( $done ) && $done === true ) {
+		if ( isset( $done ) && true === $done ) {
 			return;
 		}
 
@@ -184,8 +187,6 @@ class Spirit_Of_Football_Press {
 	}
 
 }
-
-
 
 /**
  * Utility to get a reference to this plugin.

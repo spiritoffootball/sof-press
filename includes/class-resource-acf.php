@@ -24,7 +24,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var Spirit_Of_Football_Press
 	 */
 	public $plugin;
 
@@ -33,7 +33,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @var object
+	 * @var Spirit_Of_Football_Press_Resource
 	 */
 	public $resource;
 
@@ -66,7 +66,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 
 		// Store references.
 		$this->resource = $parent;
-		$this->plugin = $parent->plugin;
+		$this->plugin   = $parent->plugin;
 
 		// Init when this plugin is loaded.
 		add_action( 'sof_press/resource/loaded', [ $this, 'register_hooks' ] );
@@ -111,9 +111,9 @@ class Spirit_Of_Football_Press_Resource_ACF {
 		$field_group_location = [
 			[
 				[
-					'param' => 'post_type',
+					'param'    => 'post_type',
 					'operator' => '==',
-					'value' => $this->resource->cpt->post_type_name,
+					'value'    => $this->resource->cpt->post_type_name,
 				],
 			],
 		];
@@ -124,36 +124,26 @@ class Spirit_Of_Football_Press_Resource_ACF {
 			'excerpt',
 			'discussion',
 			'comments',
-			//'revisions',
+			// 'revisions',
 			'author',
 			'format',
 			'page_attributes',
-			//'featured_image',
+			// 'featured_image',
 			'tags',
 			'send-trackbacks',
 		];
 
 		// Define Field Group.
 		$field_group = [
-			'key' => $this->group_prefix . 'resource',
-			'title' => __( 'Press Resource Details', 'sof-press' ),
-			'fields' => [],
-			'location' => $field_group_location,
+			'key'            => $this->group_prefix . 'resource',
+			'title'          => __( 'Press Resource Details', 'sof-press' ),
+			'fields'         => [],
+			'location'       => $field_group_location,
 			'hide_on_screen' => $field_group_hide_elements,
 		];
 
 		// Now add the Field Group.
 		acf_add_local_field_group( $field_group );
-
-		/*
-		$e = new \Exception();
-		$trace = $e->getTraceAsString();
-		error_log( print_r( [
-			'method' => __METHOD__,
-			'field_group' => $field_group,
-			//'backtrace' => $trace,
-		], true ) );
-		*/
 
 	}
 
@@ -178,14 +168,14 @@ class Spirit_Of_Football_Press_Resource_ACF {
 
 		// Define Field.
 		$field = [
-			'type' => 'wysiwyg',
-			'name' => 'about',
-			'parent' => $this->group_prefix . 'resource',
-			'key' => $this->field_resource_prefix . 'about',
-			'label' => __( 'About this Press Resource', 'sof-press' ),
-			'instructions' => __( 'If you need a general description of this Press Resource, use this field.', 'sof-press' ),
+			'type'          => 'wysiwyg',
+			'name'          => 'about',
+			'parent'        => $this->group_prefix . 'resource',
+			'key'           => $this->field_resource_prefix . 'about',
+			'label'         => __( 'About this Press Resource', 'sof-press' ),
+			'instructions'  => __( 'If you need a general description of this Press Resource, use this field.', 'sof-press' ),
 			'default_value' => '',
-			'placeholder' => '',
+			'placeholder'   => '',
 		];
 
 		// Now add Field.
@@ -193,22 +183,22 @@ class Spirit_Of_Football_Press_Resource_ACF {
 
 		// Define Field.
 		$field = [
-			'type' => 'image',
-			'name' => 'image',
-			'parent' => $this->group_prefix . 'resource',
-			'key' => $this->field_resource_prefix . 'image',
-			'label' => __( 'Press Resource Image', 'sof-press' ),
-			'instructions' => __( 'Feature Image of the Press Resource.', 'sof-press' ),
-			'required' => 0,
+			'type'              => 'image',
+			'name'              => 'image',
+			'parent'            => $this->group_prefix . 'resource',
+			'key'               => $this->field_resource_prefix . 'image',
+			'label'             => __( 'Press Resource Image', 'sof-press' ),
+			'instructions'      => __( 'Feature Image of the Press Resource.', 'sof-press' ),
+			'required'          => 0,
 			'conditional_logic' => 0,
-			'preview_size' => 'medium',
-			'acfe_thumbnail' => 1,
-			//'uploader' => 'basic',
-			//'min_size' => 0,
-			//'max_size' => $this->civicrm->attachment->field_max_size_get(),
-			//'mime_types' => $field['mime_types'],
-			'library' => 'all',
-			'return_format' => 'array',
+			'preview_size'      => 'medium',
+			'acfe_thumbnail'    => 1,
+			// 'uploader' => 'basic',
+			// 'min_size' => 0,
+			// 'max_size' => $this->civicrm->attachment->field_max_size_get(),
+			// 'mime_types' => $field['mime_types'],
+			'library'           => 'all',
+			'return_format'     => 'array',
 		];
 
 		// Now add Field.
@@ -216,66 +206,66 @@ class Spirit_Of_Football_Press_Resource_ACF {
 
 		// Define Repeater Field.
 		$repeater = [
-			'type' => 'repeater',
-			'name' => 'files',
-			'parent' => $this->group_prefix . 'resource',
-			'key' => $this->field_resource_prefix . 'file_repeater',
-			'label' => __( 'Press Resource Files', 'sof-press' ),
-			'instructions' => __( 'Downloadable Files for this Press Resource.', 'sof-press' ),
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => [
+			'type'                          => 'repeater',
+			'name'                          => 'files',
+			'parent'                        => $this->group_prefix . 'resource',
+			'key'                           => $this->field_resource_prefix . 'file_repeater',
+			'label'                         => __( 'Press Resource Files', 'sof-press' ),
+			'instructions'                  => __( 'Downloadable Files for this Press Resource.', 'sof-press' ),
+			'required'                      => 0,
+			'conditional_logic'             => 0,
+			'wrapper'                       => [
 				'width' => '',
 				'class' => '',
-				'id' => '',
+				'id'    => '',
 			],
-			'acfe_permissions' => '',
+			'acfe_permissions'              => '',
 			'acfe_repeater_stylised_button' => 0,
-			'collapsed' => $this->field_resource_prefix . 'file',
-			'min' => 0,
-			'max' => 0,
-			'layout' => 'block',
-			'button_label' => __( 'Add Press Resource File', 'sof-press' ),
-			'sub_fields' => [],
+			'collapsed'                     => $this->field_resource_prefix . 'file',
+			'min'                           => 0,
+			'max'                           => 0,
+			'layout'                        => 'block',
+			'button_label'                  => __( 'Add Press Resource File', 'sof-press' ),
+			'sub_fields'                    => [],
 		];
 
 		// Define File Field.
 		$repeater['sub_fields'][] = [
-			'type' => 'file',
-			'name' => 'file',
-			'key' => $this->field_resource_prefix . 'file',
-			'label' => __( 'File', 'sof-press' ),
-			'instructions' => __( 'The Downloadable File itself.', 'sof-press' ),
-			'required' => 0,
+			'type'              => 'file',
+			'name'              => 'file',
+			'key'               => $this->field_resource_prefix . 'file',
+			'label'             => __( 'File', 'sof-press' ),
+			'instructions'      => __( 'The Downloadable File itself.', 'sof-press' ),
+			'required'          => 0,
 			'conditional_logic' => 0,
-			'acfe_thumbnail' => 0,
-			'return_format' => 'array',
-			'mime_types' => '',
-			'library' => 'all',
-			'wrapper' => [
+			'acfe_thumbnail'    => 0,
+			'return_format'     => 'array',
+			'mime_types'        => '',
+			'library'           => 'all',
+			'wrapper'           => [
 				'width' => '50',
 				'class' => '',
-				'id' => '',
+				'id'    => '',
 			],
 		];
 
 		// Define File Preview Field.
 		$repeater['sub_fields'][] = [
-			'type' => 'image',
-			'name' => 'file_preview',
-			'key' => $this->field_resource_prefix . 'file_preview',
-			'label' => __( 'File Preview', 'sof-press' ),
-			'instructions' => __( 'An optional Image that shows a preview of the Downloadable File.', 'sof-press' ),
-			'required' => 0,
+			'type'              => 'image',
+			'name'              => 'file_preview',
+			'key'               => $this->field_resource_prefix . 'file_preview',
+			'label'             => __( 'File Preview', 'sof-press' ),
+			'instructions'      => __( 'An optional Image that shows a preview of the Downloadable File.', 'sof-press' ),
+			'required'          => 0,
 			'conditional_logic' => 0,
-			'acfe_thumbnail' => 0,
-			'return_format' => 'array',
-			'mime_types' => '',
-			'library' => 'all',
-			'wrapper' => [
+			'acfe_thumbnail'    => 0,
+			'return_format'     => 'array',
+			'mime_types'        => '',
+			'library'           => 'all',
+			'wrapper'           => [
 				'width' => '50',
 				'class' => '',
-				'id' => '',
+				'id'    => '',
 			],
 		];
 
