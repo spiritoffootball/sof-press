@@ -70,6 +70,12 @@ class Spirit_Of_Football_Press_Coverage {
 	 */
 	public function initialise() {
 
+		// Only do this once.
+		static $done;
+		if ( isset( $done ) && true === $done ) {
+			return;
+		}
+
 		// Bootstrap object.
 		$this->include_files();
 		$this->setup_objects();
@@ -82,6 +88,9 @@ class Spirit_Of_Football_Press_Coverage {
 		 */
 		do_action( 'sof_press/coverage/loaded' );
 
+		// We're done.
+		$done = true;
+
 	}
 
 	/**
@@ -89,11 +98,11 @@ class Spirit_Of_Football_Press_Coverage {
 	 *
 	 * @since 1.0.0
 	 */
-	public function include_files() {
+	private function include_files() {
 
 		// Include class files.
-		include SOF_PRESS_PATH . 'includes/class-coverage-cpt.php';
-		include SOF_PRESS_PATH . 'includes/class-coverage-acf.php';
+		require SOF_PRESS_PATH . 'includes/class-coverage-cpt.php';
+		require SOF_PRESS_PATH . 'includes/class-coverage-acf.php';
 
 	}
 
@@ -102,7 +111,7 @@ class Spirit_Of_Football_Press_Coverage {
 	 *
 	 * @since 1.0.0
 	 */
-	public function setup_objects() {
+	private function setup_objects() {
 
 		// Init objects.
 		$this->cpt = new Spirit_Of_Football_Press_Coverage_CPT( $this );
@@ -115,7 +124,7 @@ class Spirit_Of_Football_Press_Coverage {
 	 *
 	 * @since 1.0.0
 	 */
-	public function register_hooks() {
+	private function register_hooks() {
 
 	}
 
