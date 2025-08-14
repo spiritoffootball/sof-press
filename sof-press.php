@@ -70,7 +70,7 @@ class Spirit_Of_Football_Press {
 	 */
 	public function __construct() {
 
-		// Initialise on "plugins_loaded".
+		// Initialise when all plugins are loaded.
 		add_action( 'plugins_loaded', [ $this, 'initialise' ] );
 
 	}
@@ -89,9 +89,9 @@ class Spirit_Of_Football_Press {
 		}
 
 		// Bootstrap plugin.
-		$this->translation();
 		$this->include_files();
 		$this->setup_objects();
+		$this->register_hooks();
 
 		/**
 		 * Broadcast that this plugin is now loaded.
@@ -102,6 +102,44 @@ class Spirit_Of_Football_Press {
 
 		// We're done.
 		$done = true;
+
+	}
+
+	/**
+	 * Include files.
+	 *
+	 * @since 1.0.0
+	 */
+	private function include_files() {
+
+		// Include class files.
+		include SOF_PRESS_PATH . 'includes/class-coverage.php';
+		include SOF_PRESS_PATH . 'includes/class-resource.php';
+
+	}
+
+	/**
+	 * Set up this plugin's objects.
+	 *
+	 * @since 1.0.0
+	 */
+	private function setup_objects() {
+
+		// Init objects.
+		$this->coverage = new Spirit_Of_Football_Press_Coverage( $this );
+		$this->resource = new Spirit_Of_Football_Press_Resource( $this );
+
+	}
+
+	/**
+	 * Register hook callbacks.
+	 *
+	 * @since 1.0.0
+	 */
+	private function register_hooks() {
+
+		// Use translation.
+		add_action( 'init', [ $this, 'translation' ] );
 
 	}
 
@@ -119,32 +157,6 @@ class Spirit_Of_Football_Press {
 			false, // Deprecated argument.
 			dirname( plugin_basename( SOF_PRESS_FILE ) ) . '/languages/' // Relative path to files.
 		);
-
-	}
-
-	/**
-	 * Include files.
-	 *
-	 * @since 1.0.0
-	 */
-	public function include_files() {
-
-		// Include class files.
-		include SOF_PRESS_PATH . 'includes/class-coverage.php';
-		include SOF_PRESS_PATH . 'includes/class-resource.php';
-
-	}
-
-	/**
-	 * Set up this plugin's objects.
-	 *
-	 * @since 1.0.0
-	 */
-	public function setup_objects() {
-
-		// Init objects.
-		$this->coverage = new Spirit_Of_Football_Press_Coverage( $this );
-		$this->resource = new Spirit_Of_Football_Press_Resource( $this );
 
 	}
 
