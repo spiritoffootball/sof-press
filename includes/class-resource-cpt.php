@@ -96,7 +96,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param object $parent The parent object.
+	 * @param Spirit_Of_Football_Press_Resource $parent The parent object.
 	 */
 	public function __construct( $parent ) {
 
@@ -339,8 +339,8 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param str $title The existing title - usually "Add title".
-	 * @return str $title The modified title.
+	 * @param string $title The existing title - usually "Add title".
+	 * @return string $title The modified title.
 	 */
 	public function post_type_title( $title ) {
 

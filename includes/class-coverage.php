@@ -51,7 +51,7 @@ class Spirit_Of_Football_Press_Coverage {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param object $parent The parent object.
+	 * @param Spirit_Of_Football_Press $parent The parent object.
 	 */
 	public function __construct( $parent ) {
 

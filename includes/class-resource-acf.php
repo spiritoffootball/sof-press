@@ -60,7 +60,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param object $parent The parent object.
+	 * @param Spirit_Of_Football_Press_Resource $parent The parent object.
 	 */
 	public function __construct( $parent ) {
 
