@@ -110,7 +110,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	}
 
 	/**
-	 * Register WordPress hooks.
+	 * Registers hook callbacks.
 	 *
 	 * @since 1.0.0
 	 */
@@ -173,7 +173,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	// -----------------------------------------------------------------------------------
 
 	/**
-	 * Create our Custom Post Type.
+	 * Creates our Custom Post Type.
 	 *
 	 * @since 1.0.0
 	 */
@@ -249,7 +249,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	}
 
 	/**
-	 * Override messages for a Custom Post Type.
+	 * Overrides messages for a Custom Post Type.
 	 *
 	 * @since 1.0.0
 	 *
@@ -335,7 +335,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	}
 
 	/**
-	 * Override the "Add title" label.
+	 * Overrides the "Add title" label.
 	 *
 	 * @since 1.0.0
 	 *
@@ -360,7 +360,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	// -----------------------------------------------------------------------------------
 
 	/**
-	 * Create our Custom Taxonomy.
+	 * Creates our Custom Taxonomy.
 	 *
 	 * @since 1.0.0
 	 */
@@ -418,7 +418,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	}
 
 	/**
-	 * Fix the Custom Taxonomy metabox.
+	 * Fixes the Custom Taxonomy metabox.
 	 *
 	 * @see https://core.trac.wordpress.org/ticket/10982
 	 *
@@ -443,7 +443,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	}
 
 	/**
-	 * Add a filter for this Custom Taxonomy to the Custom Post Type listing.
+	 * Adds a filter for this Custom Taxonomy to the Custom Post Type listing.
 	 *
 	 * @since 1.0.0
 	 */
@@ -483,7 +483,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	// -----------------------------------------------------------------------------------
 
 	/**
-	 * Create our alternative Custom Taxonomy.
+	 * Creates our alternative Custom Taxonomy.
 	 *
 	 * @since 1.0.0
 	 */
@@ -541,7 +541,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	}
 
 	/**
-	 * Fix the alternative Custom Taxonomy metabox.
+	 * Fixes the alternative Custom Taxonomy metabox.
 	 *
 	 * @see https://core.trac.wordpress.org/ticket/10982
 	 *
@@ -566,7 +566,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 	}
 
 	/**
-	 * Add a filter for the alternative Custom Taxonomy to the Custom Post Type listing.
+	 * Adds a filter for the alternative Custom Taxonomy to the Custom Post Type listing.
 	 *
 	 * @since 1.0.0
 	 */

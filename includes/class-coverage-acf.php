@@ -74,7 +74,7 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 	}
 
 	/**
-	 * Register WordPress hooks.
+	 * Registers hook callbacks.
 	 *
 	 * @since 1.0.0
 	 */
@@ -89,7 +89,7 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 	// -----------------------------------------------------------------------------------
 
 	/**
-	 * Add ACF Field Groups.
+	 * Adds ACF Field Groups.
 	 *
 	 * @since 1.0.0
 	 */
@@ -101,11 +101,11 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 	}
 
 	/**
-	 * Add Press Items Field Group.
+	 * Adds Press Items Field Group.
 	 *
 	 * @since 1.0.0
 	 */
-	public function field_group_press_item_add() {
+	private function field_group_press_item_add() {
 
 		// Attach the Field Group to our CPT.
 		$field_group_location = [
@@ -145,20 +145,12 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 		// Now add the Field Group.
 		acf_add_local_field_group( $field_group );
 
-		/*
-		$e = new \Exception();
-		$trace = $e->getTraceAsString();
-		error_log( print_r( [
-			'method' => __METHOD__,
-			'field_group' => $field_group,
-			//'backtrace' => $trace,
-		], true ) );
-		*/
-
 	}
 
+	// -----------------------------------------------------------------------------------
+
 	/**
-	 * Add ACF Fields.
+	 * Adds ACF Fields.
 	 *
 	 * @since 1.0.0
 	 */
@@ -170,11 +162,11 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 	}
 
 	/**
-	 * Add "Press Item" Fields.
+	 * Adds "Press Item" Fields.
 	 *
 	 * @since 1.0.0
 	 */
-	public function fields_item_add() {
+	private function fields_item_add() {
 
 		// Define Field.
 		$field = [
@@ -188,16 +180,6 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 			'placeholder'   => '',
 			'required'      => 1,
 		];
-
-		/*
-		$e = new \Exception();
-		$trace = $e->getTraceAsString();
-		error_log( print_r( [
-			'method' => __METHOD__,
-			'field' => $field,
-			//'backtrace' => $trace,
-		], true ) );
-		*/
 
 		// Now add Field.
 		acf_add_local_field( $field );
@@ -216,16 +198,6 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 				'id'    => '',
 			],
 		];
-
-		/*
-		$e = new \Exception();
-		$trace = $e->getTraceAsString();
-		error_log( print_r( [
-			'method' => __METHOD__,
-			'field' => $field,
-			//'backtrace' => $trace,
-		], true ) );
-		*/
 
 		// Now add Field.
 		acf_add_local_field( $field );
@@ -247,16 +219,6 @@ class Spirit_Of_Football_Press_Coverage_ACF {
 				'id'    => '',
 			],
 		];
-
-		/*
-		$e = new \Exception();
-		$trace = $e->getTraceAsString();
-		error_log( print_r( [
-			'method' => __METHOD__,
-			'field' => $field,
-			//'backtrace' => $trace,
-		], true ) );
-		*/
 
 		// Now add Field.
 		acf_add_local_field( $field );

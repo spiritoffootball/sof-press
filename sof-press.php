@@ -76,7 +76,7 @@ class Spirit_Of_Football_Press {
 	}
 
 	/**
-	 * Do stuff on plugin init.
+	 * Initialises this plugin.
 	 *
 	 * @since 1.0.0
 	 */
@@ -94,7 +94,7 @@ class Spirit_Of_Football_Press {
 		$this->register_hooks();
 
 		/**
-		 * Broadcast that this plugin is now loaded.
+		 * Fires when this plugin is loaded.
 		 *
 		 * @since 1.0.0
 		 */
@@ -106,7 +106,7 @@ class Spirit_Of_Football_Press {
 	}
 
 	/**
-	 * Include files.
+	 * Includes plugin files.
 	 *
 	 * @since 1.0.0
 	 */
@@ -119,7 +119,7 @@ class Spirit_Of_Football_Press {
 	}
 
 	/**
-	 * Set up this plugin's objects.
+	 * Sets up this plugin's objects.
 	 *
 	 * @since 1.0.0
 	 */
@@ -132,7 +132,7 @@ class Spirit_Of_Football_Press {
 	}
 
 	/**
-	 * Register hook callbacks.
+	 * Registers hook callbacks.
 	 *
 	 * @since 1.0.0
 	 */
@@ -144,7 +144,7 @@ class Spirit_Of_Football_Press {
 	}
 
 	/**
-	 * Enable translation.
+	 * Enables translation.
 	 *
 	 * @since 1.0.0
 	 */
@@ -161,7 +161,7 @@ class Spirit_Of_Football_Press {
 	}
 
 	/**
-	 * Perform plugin activation tasks.
+	 * Performs plugin activation tasks.
 	 *
 	 * @since 1.0.0
 	 */
@@ -180,7 +180,7 @@ class Spirit_Of_Football_Press {
 	}
 
 	/**
-	 * Perform plugin deactivation tasks.
+	 * Performs plugin deactivation tasks.
 	 *
 	 * @since 1.0.0
 	 */
@@ -201,7 +201,7 @@ class Spirit_Of_Football_Press {
 }
 
 /**
- * Utility to get a reference to this plugin.
+ * Gets a reference to this plugin.
  *
  * @since 1.0.0
  *

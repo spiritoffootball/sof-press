@@ -82,7 +82,7 @@ class Spirit_Of_Football_Press_Resource {
 		$this->register_hooks();
 
 		/**
-		 * Broadcast that this class is now loaded.
+		 * Fires when this class is loaded.
 		 *
 		 * @since 1.0.0
 		 */
@@ -94,7 +94,7 @@ class Spirit_Of_Football_Press_Resource {
 	}
 
 	/**
-	 * Include files.
+	 * Includes files.
 	 *
 	 * @since 1.0.0
 	 */
@@ -107,7 +107,7 @@ class Spirit_Of_Football_Press_Resource {
 	}
 
 	/**
-	 * Set up this plugin's objects.
+	 * Sets up this plugin's objects.
 	 *
 	 * @since 1.0.0
 	 */
@@ -120,7 +120,7 @@ class Spirit_Of_Football_Press_Resource {
 	}
 
 	/**
-	 * Register WordPress hooks.
+	 * Registers hook callbacks.
 	 *
 	 * @since 1.0.0
 	 */

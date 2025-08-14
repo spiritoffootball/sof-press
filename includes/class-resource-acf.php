@@ -74,7 +74,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	}
 
 	/**
-	 * Register WordPress hooks.
+	 * Registers hook callbacks.
 	 *
 	 * @since 1.0.0
 	 */
@@ -89,7 +89,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	// -----------------------------------------------------------------------------------
 
 	/**
-	 * Add ACF Field Groups.
+	 * Adds ACF Field Groups.
 	 *
 	 * @since 1.0.0
 	 */
@@ -101,11 +101,11 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	}
 
 	/**
-	 * Add Press Resources Field Group.
+	 * Adds Press Resources Field Group.
 	 *
 	 * @since 1.0.0
 	 */
-	public function field_group_press_resource_add() {
+	private function field_group_press_resource_add() {
 
 		// Attach the Field Group to our CPT.
 		$field_group_location = [
@@ -148,7 +148,7 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	}
 
 	/**
-	 * Add ACF Fields.
+	 * Adds ACF Fields.
 	 *
 	 * @since 1.0.0
 	 */
@@ -160,11 +160,11 @@ class Spirit_Of_Football_Press_Resource_ACF {
 	}
 
 	/**
-	 * Add "Press Resource" Fields.
+	 * Adds "Press Resource" Fields.
 	 *
 	 * @since 1.0.0
 	 */
-	public function fields_resource_add() {
+	private function fields_resource_add() {
 
 		// Define Field.
 		$field = [
