@@ -386,7 +386,7 @@ class Spirit_Of_Football_Press_Resource_CPT {
 				'all_items'         => __( 'All Press Resource Types', 'sof-press' ),
 				'parent_item'       => __( 'Parent Press Resource Type', 'sof-press' ),
 				'parent_item_colon' => __( 'Parent Press Resource Type:', 'sof-press' ),
-				'edit_item'         => __( 'Edit Press ResourceResource Type', 'sof-press' ),
+				'edit_item'         => __( 'Edit Press Resource Type', 'sof-press' ),
 				'update_item'       => __( 'Update Press Resource Type', 'sof-press' ),
 				'add_new_item'      => __( 'Add New Press Resource Type', 'sof-press' ),
 				'new_item_name'     => __( 'New Press Resource Type Name', 'sof-press' ),
