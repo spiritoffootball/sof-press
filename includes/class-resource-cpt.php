@@ -185,40 +185,42 @@ class Spirit_Of_Football_Press_Resource_CPT {
 			return;
 		}
 
+		// Define labels.
+		$labels = [
+			'name'               => __( 'Press Resources', 'sof-press' ),
+			'singular_name'      => __( 'Press Resource', 'sof-press' ),
+			'add_new'            => __( 'Add New', 'sof-press' ),
+			'add_new_item'       => __( 'Add New Press Resource', 'sof-press' ),
+			'edit_item'          => __( 'Edit Press Resource', 'sof-press' ),
+			'new_item'           => __( 'New Press Resource', 'sof-press' ),
+			'all_items'          => __( 'All Press Resources', 'sof-press' ),
+			'view_item'          => __( 'View Press Resource', 'sof-press' ),
+			'search_items'       => __( 'Search Press Resources', 'sof-press' ),
+			'not_found'          => __( 'No matching Press Resource found', 'sof-press' ),
+			'not_found_in_trash' => __( 'No Press Resources found in Trash', 'sof-press' ),
+			'menu_name'          => __( 'Press Resources', 'sof-press' ),
+		];
+
 		// Create Post Type args.
 		$args = [
 
-			// Labels.
-			'labels'              => [
-				'name'               => __( 'Press Resources', 'sof-press' ),
-				'singular_name'      => __( 'Press Resource', 'sof-press' ),
-				'add_new'            => __( 'Add New', 'sof-press' ),
-				'add_new_item'       => __( 'Add New Press Resource', 'sof-press' ),
-				'edit_item'          => __( 'Edit Press Resource', 'sof-press' ),
-				'new_item'           => __( 'New Press Resource', 'sof-press' ),
-				'all_items'          => __( 'All Press Resources', 'sof-press' ),
-				'view_item'          => __( 'View Press Resource', 'sof-press' ),
-				'search_items'       => __( 'Search Press Resources', 'sof-press' ),
-				'not_found'          => __( 'No matching Press Resource found', 'sof-press' ),
-				'not_found_in_trash' => __( 'No Press Resources found in Trash', 'sof-press' ),
-				'menu_name'          => __( 'Press Resources', 'sof-press' ),
-			],
+			'labels'              => $labels,
 
 			// Defaults.
 			'menu_icon'           => 'dashicons-download',
 			'description'         => __( 'A press item post type', 'sof-press' ),
 			'public'              => true,
 			'publicly_queryable'  => true,
-			'exclude_from_search' => false,
+			'exclude_from_search' => true,
 			'show_ui'             => true,
-			'show_in_nav_menus'   => true,
+			'show_in_nav_menus'   => false,
 			'show_in_menu'        => true,
 			'show_in_admin_bar'   => true,
-			'has_archive'         => true,
+			'has_archive'         => false,
 			'query_var'           => true,
 			'capability_type'     => 'post',
 			'hierarchical'        => false,
-			'menu_position'       => 30,
+			'menu_position'       => 50,
 			'map_meta_cap'        => true,
 
 			// Rewrite.
@@ -230,8 +232,6 @@ class Spirit_Of_Football_Press_Resource_CPT {
 			// Supports.
 			'supports'            => [
 				'title',
-				'editor',
-				'excerpt',
 			],
 
 			// REST setup.

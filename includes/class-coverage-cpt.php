@@ -185,40 +185,42 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 			return;
 		}
 
+		// Define labels.
+		$labels = [
+			'name'               => __( 'Press Coverage', 'sof-press' ),
+			'singular_name'      => __( 'Press Item', 'sof-press' ),
+			'add_new'            => __( 'Add New', 'sof-press' ),
+			'add_new_item'       => __( 'Add New Press Item', 'sof-press' ),
+			'edit_item'          => __( 'Edit Press Item', 'sof-press' ),
+			'new_item'           => __( 'New Press Item', 'sof-press' ),
+			'all_items'          => __( 'All Press Items', 'sof-press' ),
+			'view_item'          => __( 'View Press Item', 'sof-press' ),
+			'search_items'       => __( 'Search Press Items', 'sof-press' ),
+			'not_found'          => __( 'No matching Press Item found', 'sof-press' ),
+			'not_found_in_trash' => __( 'No Press Items found in Trash', 'sof-press' ),
+			'menu_name'          => __( 'Press Coverage', 'sof-press' ),
+		];
+
 		// Create Post Type args.
 		$args = [
 
-			// Labels.
-			'labels'              => [
-				'name'               => __( 'Press Coverage', 'sof-press' ),
-				'singular_name'      => __( 'Press Item', 'sof-press' ),
-				'add_new'            => __( 'Add New', 'sof-press' ),
-				'add_new_item'       => __( 'Add New Press Item', 'sof-press' ),
-				'edit_item'          => __( 'Edit Press Item', 'sof-press' ),
-				'new_item'           => __( 'New Press Item', 'sof-press' ),
-				'all_items'          => __( 'All Press Items', 'sof-press' ),
-				'view_item'          => __( 'View Press Item', 'sof-press' ),
-				'search_items'       => __( 'Search Press Items', 'sof-press' ),
-				'not_found'          => __( 'No matching Press Item found', 'sof-press' ),
-				'not_found_in_trash' => __( 'No Press Items found in Trash', 'sof-press' ),
-				'menu_name'          => __( 'Press Coverage', 'sof-press' ),
-			],
+			'labels'              => $labels,
 
 			// Defaults.
 			'menu_icon'           => 'dashicons-bell',
 			'description'         => __( 'Press Coverage of Spirit of Football activities', 'sof-press' ),
 			'public'              => true,
 			'publicly_queryable'  => true,
-			'exclude_from_search' => false,
+			'exclude_from_search' => true,
 			'show_ui'             => true,
-			'show_in_nav_menus'   => true,
+			'show_in_nav_menus'   => false,
 			'show_in_menu'        => true,
 			'show_in_admin_bar'   => true,
-			'has_archive'         => true,
+			'has_archive'         => false,
 			'query_var'           => true,
 			'capability_type'     => 'post',
 			'hierarchical'        => false,
-			'menu_position'       => 30,
+			'menu_position'       => 50,
 			'map_meta_cap'        => true,
 
 			// Rewrite.
@@ -230,7 +232,6 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 			// Supports.
 			'supports'            => [
 				'title',
-				'editor',
 				'excerpt',
 			],
 
