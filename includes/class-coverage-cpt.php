@@ -211,12 +211,12 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 			'description'         => __( 'Press Coverage of Spirit of Football activities', 'sof-press' ),
 			'public'              => true,
 			'publicly_queryable'  => true,
-			'exclude_from_search' => true,
+			'exclude_from_search' => false,
 			'show_ui'             => true,
-			'show_in_nav_menus'   => false,
+			'show_in_nav_menus'   => true,
 			'show_in_menu'        => true,
 			'show_in_admin_bar'   => true,
-			'has_archive'         => false,
+			'has_archive'         => true,
 			'query_var'           => true,
 			'capability_type'     => 'post',
 			'hierarchical'        => false,
@@ -233,6 +233,7 @@ class Spirit_Of_Football_Press_Coverage_CPT {
 			'supports'            => [
 				'title',
 				'excerpt',
+				'thumbnail',
 			],
 
 			// REST setup.
