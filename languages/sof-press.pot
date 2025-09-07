@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the SOF Press plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: SOF Press 1.0.2a\n"
+"Project-Id-Version: SOF Press 1.0.3a\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sof-press\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-14T10:50:37+00:00\n"
+"POT-Creation-Date: 2025-09-07T11:56:56+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: sof-press\n"
@@ -91,226 +91,226 @@ msgstr ""
 msgid "Downloadable File for the Press Item."
 msgstr ""
 
-#: includes/class-coverage-cpt.php:193
-#: includes/class-coverage-cpt.php:204
+#: includes/class-coverage-cpt.php:190
+#: includes/class-coverage-cpt.php:201
 msgid "Press Coverage"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:194
+#: includes/class-coverage-cpt.php:191
 msgid "Press Item"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:195
-#: includes/class-resource-cpt.php:195
+#: includes/class-coverage-cpt.php:192
+#: includes/class-resource-cpt.php:192
 msgid "Add New"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:196
+#: includes/class-coverage-cpt.php:193
 msgid "Add New Press Item"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:197
+#: includes/class-coverage-cpt.php:194
 msgid "Edit Press Item"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:198
+#: includes/class-coverage-cpt.php:195
 msgid "New Press Item"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:199
+#: includes/class-coverage-cpt.php:196
 msgid "All Press Items"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:200
+#: includes/class-coverage-cpt.php:197
 msgid "View Press Item"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:201
+#: includes/class-coverage-cpt.php:198
 msgid "Search Press Items"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:202
+#: includes/class-coverage-cpt.php:199
 msgid "No matching Press Item found"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:203
+#: includes/class-coverage-cpt.php:200
 msgid "No Press Items found in Trash"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:209
+#: includes/class-coverage-cpt.php:211
 msgid "Press Coverage of Spirit of Football activities"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-coverage-cpt.php:273
+#: includes/class-coverage-cpt.php:275
 #, php-format
 msgid "Press Item updated. <a href=\"%s\">View Press Item</a>"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:278
-#: includes/class-resource-cpt.php:278
+#: includes/class-coverage-cpt.php:280
+#: includes/class-resource-cpt.php:279
 msgid "Custom field updated."
 msgstr ""
 
-#: includes/class-coverage-cpt.php:279
-#: includes/class-resource-cpt.php:279
+#: includes/class-coverage-cpt.php:281
+#: includes/class-resource-cpt.php:280
 msgid "Custom field deleted."
 msgstr ""
 
-#: includes/class-coverage-cpt.php:280
+#: includes/class-coverage-cpt.php:282
 msgid "Press Item updated."
 msgstr ""
 
 #. translators: %s: The date and time of the revision.
-#: includes/class-coverage-cpt.php:289
+#: includes/class-coverage-cpt.php:291
 #, php-format
 msgid "Press Item restored to revision from %s"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-coverage-cpt.php:300
+#: includes/class-coverage-cpt.php:302
 #, php-format
 msgid "Press Item published. <a href=\"%s\">View Press Item</a>"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:305
+#: includes/class-coverage-cpt.php:307
 msgid "Press Item saved."
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-coverage-cpt.php:310
+#: includes/class-coverage-cpt.php:312
 #, php-format
 msgid "Press Item submitted. <a target=\"_blank\" href=\"%s\">Preview Press Item</a>"
 msgstr ""
 
 #. translators: 1: The date, 2: The permalink.
-#: includes/class-coverage-cpt.php:317
+#: includes/class-coverage-cpt.php:319
 #, php-format
 msgid "Press Item scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Press Item</a>"
 msgstr ""
 
 #. translators: Publish box date format - see https://php.net/date
-#: includes/class-coverage-cpt.php:319
-#: includes/class-resource-cpt.php:319
+#: includes/class-coverage-cpt.php:321
+#: includes/class-resource-cpt.php:320
 msgid "M j, Y @ G:i"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-coverage-cpt.php:326
+#: includes/class-coverage-cpt.php:328
 #, php-format
 msgid "Press Item draft updated. <a target=\"_blank\" href=\"%s\">Preview Press Item</a>"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:353
+#: includes/class-coverage-cpt.php:355
 msgid "Add an identifying name for the Press Item"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:383
+#: includes/class-coverage-cpt.php:385
 msgctxt "taxonomy general name"
 msgid "Press Item Types"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:384
+#: includes/class-coverage-cpt.php:386
 msgctxt "taxonomy singular name"
 msgid "Press Item Type"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:385
+#: includes/class-coverage-cpt.php:387
 msgid "Search Press Item Types"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:386
+#: includes/class-coverage-cpt.php:388
 msgid "All Press Item Types"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:387
+#: includes/class-coverage-cpt.php:389
 msgid "Parent Press Item Type"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:388
+#: includes/class-coverage-cpt.php:390
 msgid "Parent Press Item Type:"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:389
+#: includes/class-coverage-cpt.php:391
 msgid "Edit Press Item Type"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:390
+#: includes/class-coverage-cpt.php:392
 msgid "Update Press Item Type"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:391
+#: includes/class-coverage-cpt.php:393
 msgid "Add New Press Item Type"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:392
+#: includes/class-coverage-cpt.php:394
 msgid "New Press Item Type Name"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:393
+#: includes/class-coverage-cpt.php:395
 msgid "Press Item Types"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:394
+#: includes/class-coverage-cpt.php:396
 msgid "No Press Item Types found"
 msgstr ""
 
 #. translators: %s: The plural name of the taxonomy terms.
-#: includes/class-coverage-cpt.php:466
-#: includes/class-coverage-cpt.php:589
-#: includes/class-resource-cpt.php:466
-#: includes/class-resource-cpt.php:589
+#: includes/class-coverage-cpt.php:468
+#: includes/class-coverage-cpt.php:591
+#: includes/class-resource-cpt.php:467
+#: includes/class-resource-cpt.php:590
 #, php-format
 msgid "Show All %s"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:506
+#: includes/class-coverage-cpt.php:508
 msgctxt "taxonomy general name"
 msgid "Press Item Tags"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:507
+#: includes/class-coverage-cpt.php:509
 msgctxt "taxonomy singular name"
 msgid "Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:508
+#: includes/class-coverage-cpt.php:510
 msgid "Search Press Item Tags"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:509
+#: includes/class-coverage-cpt.php:511
 msgid "All Press Item Tags"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:510
+#: includes/class-coverage-cpt.php:512
 msgid "Parent Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:511
+#: includes/class-coverage-cpt.php:513
 msgid "Parent Press Item Tag:"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:512
+#: includes/class-coverage-cpt.php:514
 msgid "Edit Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:513
+#: includes/class-coverage-cpt.php:515
 msgid "Update Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:514
+#: includes/class-coverage-cpt.php:516
 msgid "Add New Press Item Tag"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:515
+#: includes/class-coverage-cpt.php:517
 msgid "New Press Item Tag Name"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:516
+#: includes/class-coverage-cpt.php:518
 msgid "Press Item Tags"
 msgstr ""
 
-#: includes/class-coverage-cpt.php:517
+#: includes/class-coverage-cpt.php:519
 msgid "No Press Item Tags found"
 msgstr ""
 
@@ -362,195 +362,195 @@ msgstr ""
 msgid "An optional Image that shows a preview of the Downloadable File."
 msgstr ""
 
-#: includes/class-resource-cpt.php:193
-#: includes/class-resource-cpt.php:204
+#: includes/class-resource-cpt.php:190
+#: includes/class-resource-cpt.php:201
 msgid "Press Resources"
 msgstr ""
 
-#: includes/class-resource-cpt.php:194
+#: includes/class-resource-cpt.php:191
 msgid "Press Resource"
 msgstr ""
 
-#: includes/class-resource-cpt.php:196
+#: includes/class-resource-cpt.php:193
 msgid "Add New Press Resource"
 msgstr ""
 
-#: includes/class-resource-cpt.php:197
+#: includes/class-resource-cpt.php:194
 msgid "Edit Press Resource"
 msgstr ""
 
-#: includes/class-resource-cpt.php:198
+#: includes/class-resource-cpt.php:195
 msgid "New Press Resource"
 msgstr ""
 
-#: includes/class-resource-cpt.php:199
+#: includes/class-resource-cpt.php:196
 msgid "All Press Resources"
 msgstr ""
 
-#: includes/class-resource-cpt.php:200
+#: includes/class-resource-cpt.php:197
 msgid "View Press Resource"
 msgstr ""
 
-#: includes/class-resource-cpt.php:201
+#: includes/class-resource-cpt.php:198
 msgid "Search Press Resources"
 msgstr ""
 
-#: includes/class-resource-cpt.php:202
+#: includes/class-resource-cpt.php:199
 msgid "No matching Press Resource found"
 msgstr ""
 
-#: includes/class-resource-cpt.php:203
+#: includes/class-resource-cpt.php:200
 msgid "No Press Resources found in Trash"
 msgstr ""
 
-#: includes/class-resource-cpt.php:209
+#: includes/class-resource-cpt.php:211
 msgid "A press item post type"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-resource-cpt.php:273
+#: includes/class-resource-cpt.php:274
 #, php-format
 msgid "Press Resource updated. <a href=\"%s\">View Press Resource</a>"
 msgstr ""
 
-#: includes/class-resource-cpt.php:280
+#: includes/class-resource-cpt.php:281
 msgid "Press Resource updated."
 msgstr ""
 
 #. translators: %s: The date and time of the revision.
-#: includes/class-resource-cpt.php:289
+#: includes/class-resource-cpt.php:290
 #, php-format
 msgid "Press Resource restored to revision from %s"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-resource-cpt.php:300
+#: includes/class-resource-cpt.php:301
 #, php-format
 msgid "Press Resource published. <a href=\"%s\">View Press Resource</a>"
 msgstr ""
 
-#: includes/class-resource-cpt.php:305
+#: includes/class-resource-cpt.php:306
 msgid "Press Resource saved."
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-resource-cpt.php:310
+#: includes/class-resource-cpt.php:311
 #, php-format
 msgid "Press Resource submitted. <a target=\"_blank\" href=\"%s\">Preview Press Resource</a>"
 msgstr ""
 
 #. translators: 1: The date, 2: The permalink.
-#: includes/class-resource-cpt.php:317
+#: includes/class-resource-cpt.php:318
 #, php-format
 msgid "Press Resource scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Press Resource</a>"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-resource-cpt.php:326
+#: includes/class-resource-cpt.php:327
 #, php-format
 msgid "Press Resource draft updated. <a target=\"_blank\" href=\"%s\">Preview Press Resource</a>"
 msgstr ""
 
-#: includes/class-resource-cpt.php:353
+#: includes/class-resource-cpt.php:354
 msgid "Add an identifying name for the Press Resource"
 msgstr ""
 
-#: includes/class-resource-cpt.php:383
+#: includes/class-resource-cpt.php:384
 msgctxt "taxonomy general name"
 msgid "Press Resource Types"
 msgstr ""
 
-#: includes/class-resource-cpt.php:384
+#: includes/class-resource-cpt.php:385
 msgctxt "taxonomy singular name"
 msgid "Press Resource Type"
 msgstr ""
 
-#: includes/class-resource-cpt.php:385
+#: includes/class-resource-cpt.php:386
 msgid "Search Press Resource Types"
 msgstr ""
 
-#: includes/class-resource-cpt.php:386
+#: includes/class-resource-cpt.php:387
 msgid "All Press Resource Types"
 msgstr ""
 
-#: includes/class-resource-cpt.php:387
+#: includes/class-resource-cpt.php:388
 msgid "Parent Press Resource Type"
 msgstr ""
 
-#: includes/class-resource-cpt.php:388
+#: includes/class-resource-cpt.php:389
 msgid "Parent Press Resource Type:"
 msgstr ""
 
-#: includes/class-resource-cpt.php:389
-msgid "Edit Press ResourceResource Type"
-msgstr ""
-
 #: includes/class-resource-cpt.php:390
-msgid "Update Press Resource Type"
+msgid "Edit Press Resource Type"
 msgstr ""
 
 #: includes/class-resource-cpt.php:391
-msgid "Add New Press Resource Type"
+msgid "Update Press Resource Type"
 msgstr ""
 
 #: includes/class-resource-cpt.php:392
-msgid "New Press Resource Type Name"
+msgid "Add New Press Resource Type"
 msgstr ""
 
 #: includes/class-resource-cpt.php:393
-msgid "Press Resource Types"
+msgid "New Press Resource Type Name"
 msgstr ""
 
 #: includes/class-resource-cpt.php:394
+msgid "Press Resource Types"
+msgstr ""
+
+#: includes/class-resource-cpt.php:395
 msgid "No Press Resource Types found"
 msgstr ""
 
-#: includes/class-resource-cpt.php:506
+#: includes/class-resource-cpt.php:507
 msgctxt "taxonomy general name"
 msgid "Press Resource Tags"
 msgstr ""
 
-#: includes/class-resource-cpt.php:507
+#: includes/class-resource-cpt.php:508
 msgctxt "taxonomy singular name"
 msgid "Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:508
+#: includes/class-resource-cpt.php:509
 msgid "Search Press Resource Tags"
 msgstr ""
 
-#: includes/class-resource-cpt.php:509
+#: includes/class-resource-cpt.php:510
 msgid "All Press Resource Tags"
 msgstr ""
 
-#: includes/class-resource-cpt.php:510
+#: includes/class-resource-cpt.php:511
 msgid "Parent Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:511
+#: includes/class-resource-cpt.php:512
 msgid "Parent Press Resource Tag:"
 msgstr ""
 
-#: includes/class-resource-cpt.php:512
+#: includes/class-resource-cpt.php:513
 msgid "Edit Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:513
+#: includes/class-resource-cpt.php:514
 msgid "Update Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:514
+#: includes/class-resource-cpt.php:515
 msgid "Add New Press Resource Tag"
 msgstr ""
 
-#: includes/class-resource-cpt.php:515
+#: includes/class-resource-cpt.php:516
 msgid "New Press Resource Tag Name"
 msgstr ""
 
-#: includes/class-resource-cpt.php:516
+#: includes/class-resource-cpt.php:517
 msgid "Press Resource Tags"
 msgstr ""
 
-#: includes/class-resource-cpt.php:517
+#: includes/class-resource-cpt.php:518
 msgid "No Press Resource Tags found"
 msgstr ""
