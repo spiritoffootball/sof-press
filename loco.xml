@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle name="SOF Press">
+	<domain name="sof-press">
+		<project name="SOF Press" slug="sof-press">
+			<source>
+				<directory>.</directory>
+			</source>
+			<target>
+				<directory>languages</directory>
+			</target>
+			<template>
+				<file>languages/sof-press.pot</file>
+			</template>
+		</project>
+	</domain>
+</bundle>
