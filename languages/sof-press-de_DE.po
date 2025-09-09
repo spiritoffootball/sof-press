@@ -10,49 +10,200 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-09-07T11:56:56+00:00\n"
-"PO-Revision-Date: 2025-09-08 11:10+0000\n"
+"PO-Revision-Date: 2025-09-09 10:23+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: sof-press\n"
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.8.0; wp-6.8.2; php-8.2.4"
 
-#. Plugin Name of the plugin
-#: sof-press.php
-msgid "SOF Press"
-msgstr "SOF Press"
+#: includes/class-resource-cpt.php:209
+msgid "A press item post type"
+msgstr "Ein Presseartikel-Posttyp"
 
-#. Plugin URI of the plugin
-#: sof-press.php
-msgid "https://github.com/spiritoffootball/sof-press"
-msgstr "https://github.com/spiritoffootball/sof-press"
+#: includes/class-coverage-acf.php:232
+msgid "About this Press Item"
+msgstr "Über diesen Presseartikel"
 
-#. Description of the plugin
-#: sof-press.php
-msgid "Provides \"Press\" functionality for the Spirit of Football website."
+#: includes/class-resource-acf.php:175
+msgid "About this Press Resource"
+msgstr "Über diese Presseressource"
+
+#: includes/class-coverage-cpt.php:353
+msgid "Add an identifying name for the Press Item"
+msgstr "Geben Sie einen eindeutigen Namen für den Presseartikel an."
+
+#: includes/class-resource-cpt.php:352
+msgid "Add an identifying name for the Press Resource"
+msgstr "Geben Sie einen eindeutigen Namen für die Presse-Ressource ein."
+
+#: includes/class-coverage-cpt.php:190 includes/class-resource-cpt.php:190
+msgid "Add New"
+msgstr "Neu hinzufügen"
+
+#: includes/class-coverage-cpt.php:191
+msgid "Add New Press Item"
+msgstr "Neuen Presseartikel hinzufügen"
+
+#: includes/class-coverage-cpt.php:514
+msgid "Add New Press Item Tag"
+msgstr "Schlagwort hinzufügen"
+
+#: includes/class-coverage-cpt.php:391
+msgid "Add New Press Item Type"
+msgstr "Kategorie hinzufügen"
+
+#: includes/class-resource-cpt.php:191
+msgid "Add New Press Resource"
+msgstr "Neue Presseressource hinzufügen"
+
+#: includes/class-resource-cpt.php:513
+msgid "Add New Press Resource Tag"
+msgstr "Schlagwort hinzufügen"
+
+#: includes/class-resource-cpt.php:390
+msgid "Add New Press Resource Type"
+msgstr "Kategorie hinzufügen"
+
+#: includes/class-coverage-cpt.php:519
+msgid "Add or remove Press Item Tag"
+msgstr "Schlagwort hinzufügen oder entfernen"
+
+#: includes/class-resource-cpt.php:518
+msgid "Add or remove Press Resource Tag"
+msgstr "Schlagwort hinzufügen oder entfernen"
+
+#: includes/class-resource-acf.php:228
+msgid "Add Press Resource File"
+msgstr "Presseressourcendatei hinzufügen"
+
+#: includes/class-coverage-cpt.php:511
+msgid "All Press Item Tags"
+msgstr "Alle Schlagwörter"
+
+#: includes/class-coverage-cpt.php:386
+msgid "All Press Item Types"
+msgstr "Alle Kategorien"
+
+#: includes/class-coverage-cpt.php:194
+msgid "All Press Items"
+msgstr "Alle Presseartikel"
+
+#: includes/class-resource-cpt.php:510
+msgid "All Press Resource Tags"
+msgstr "Alle Schlagwörter"
+
+#: includes/class-resource-cpt.php:385
+msgid "All Press Resource Types"
+msgstr "Alle Kategorien"
+
+#: includes/class-resource-cpt.php:194
+msgid "All Press Resources"
+msgstr "Alle Presseressourcen"
+
+#: includes/class-coverage-acf.php:253
+msgid "An Image of the Press Item."
+msgstr "Ein Bild des Presseartikels."
+
+#: includes/class-resource-acf.php:258
+msgid "An optional Image that shows a preview of the Downloadable File."
 msgstr ""
+"Ein optionales Bild, das eine Vorschau der herunterladbaren Datei anzeigt."
+
+#: includes/class-coverage-cpt.php:520
+msgid "Choose from the most popular Press Item Tags"
+msgstr "Wählen Sie aus den beliebtesten Schlagwörter aus"
+
+#: includes/class-resource-cpt.php:519
+msgid "Choose from the most popular Press Resource Tags"
+msgstr "Wählen Sie aus den beliebtesten Schlagwörter aus"
 
 #. Author of the plugin
 #: sof-press.php
 msgid "Christian Wach"
 msgstr "Christian Wach"
 
+#: includes/class-coverage-cpt.php:279 includes/class-resource-cpt.php:278
+msgid "Custom field deleted."
+msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#: includes/class-coverage-cpt.php:278 includes/class-resource-cpt.php:277
+msgid "Custom field updated."
+msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#: includes/class-coverage-acf.php:212
+msgid "Date of the Press Item."
+msgstr "Datum des Presseartikels."
+
+#: includes/class-coverage-acf.php:211
+msgid "Date Published"
+msgstr "Veröffentlichungsdatum"
+
+#: includes/class-coverage-acf.php:277
+msgid "Downloadable File for the Press Item."
+msgstr "Herunterladbare Datei für den Presseartikel."
+
+#: includes/class-resource-acf.php:214
+msgid "Downloadable Files for this Press Resource."
+msgstr "Herunterladbare Dateien für diese Presseressource."
+
+#: includes/class-coverage-cpt.php:192
+msgid "Edit Press Item"
+msgstr "Presseartikel bearbeiten"
+
+#: includes/class-coverage-cpt.php:512
+msgid "Edit Press Item Tag"
+msgstr "Schlagwort bearbeiten"
+
+#: includes/class-coverage-cpt.php:389
+msgid "Edit Press Item Type"
+msgstr "Kategorie bearbeiten"
+
+#: includes/class-resource-cpt.php:192
+msgid "Edit Press Resource"
+msgstr "Presse-Ressource bearbeiten"
+
+#: includes/class-resource-cpt.php:511
+msgid "Edit Press Resource Tag"
+msgstr "Schlagwort bearbeiten"
+
+#: includes/class-resource-cpt.php:388
+msgid "Edit Press Resource Type"
+msgstr "Kategorie bearbeiten"
+
+#: includes/class-resource-acf.php:191
+msgid "Feature Image of the Press Resource."
+msgstr "Titelbild der Presseressource."
+
+#: includes/class-resource-acf.php:237
+msgid "File"
+msgstr "Datei"
+
+#: includes/class-resource-acf.php:257
+msgid "File Preview"
+msgstr "Dateivorschau"
+
+#. Plugin URI of the plugin
+#: sof-press.php
+msgid "https://github.com/spiritoffootball/sof-press"
+msgstr "https://github.com/spiritoffootball/sof-press"
+
 #. Author URI of the plugin
 #: sof-press.php
 msgid "https://haystack.co.uk"
 msgstr "https://haystack.co.uk"
 
-#: includes/class-coverage-acf.php:139
-msgid "Press Item Details"
-msgstr "Presseartikeldetails"
+#: includes/class-resource-acf.php:176
+msgid ""
+"If you need a general description of this Press Resource, use this field."
+msgstr ""
+"Wenn Sie eine allgemeine Beschreibung dieser Presseressource benötigen, "
+"verwenden Sie dieses Feld."
 
-#: includes/class-coverage-acf.php:177
-msgid "Publisher"
-msgstr "Herausgeber*in"
-
-#: includes/class-coverage-acf.php:178
-msgid "Who published this Press Item? Examples: CNN, BBC, etc."
-msgstr "Wer hat diesen Presseartikel veröffentlicht? Beispiele: CNN, BBC usw."
+#: includes/class-coverage-acf.php:233
+msgid "If you need to describe the Press Item, use this field."
+msgstr ""
+"Wenn Sie den Presseartikel beschreiben müssen, verwenden Sie dieses Feld."
 
 #: includes/class-coverage-acf.php:193
 msgid "Link"
@@ -62,147 +213,109 @@ msgstr "Link"
 msgid "Link to the published Press Item."
 msgstr "Link zur veröffentlichten Pressemitteilung."
 
-#: includes/class-coverage-acf.php:211
-msgid "Date Published"
-msgstr "Veröffentlichungsdatum"
-
-#: includes/class-coverage-acf.php:212
-msgid "Date of the Press Item."
-msgstr "Datum des Presseartikels."
-
-#: includes/class-coverage-acf.php:232
-msgid "About this Press Item"
-msgstr "Über diesen Presseartikel"
-
-#: includes/class-coverage-acf.php:233
-msgid "If you need to describe the Press Item, use this field."
-msgstr ""
-"Wenn Sie den Presseartikel beschreiben müssen, verwenden Sie dieses Feld."
-
-#: includes/class-coverage-acf.php:252
-msgid "Press Item Image"
-msgstr "Presseartikelbild"
-
-#: includes/class-coverage-acf.php:253
-msgid "An Image of the Press Item."
-msgstr "Ein Bild des Presseartikels."
-
-#: includes/class-coverage-acf.php:276
-msgid "Press Item File"
-msgstr "Presseartikel-Datei"
-
-#: includes/class-coverage-acf.php:277
-msgid "Downloadable File for the Press Item."
-msgstr "Herunterladbare Datei für den Presseartikel."
-
-#: includes/class-coverage-cpt.php:190 includes/class-coverage-cpt.php:201
-msgid "Press Coverage"
-msgstr "Presseberichterstattung"
-
-#: includes/class-coverage-cpt.php:191
-msgid "Press Item"
-msgstr "Presseartikel"
-
-#: includes/class-coverage-cpt.php:192 includes/class-resource-cpt.php:192
-msgid "Add New"
-msgstr "Neu hinzufügen"
-
-#: includes/class-coverage-cpt.php:193
-msgid "Add New Press Item"
-msgstr "Neuen Presseartikel hinzufügen"
-
-#: includes/class-coverage-cpt.php:194
-msgid "Edit Press Item"
-msgstr "Presseartikel bearbeiten"
-
-#: includes/class-coverage-cpt.php:195
-msgid "New Press Item"
-msgstr "Neuer Presseartikel"
-
-#: includes/class-coverage-cpt.php:196
-msgid "All Press Items"
-msgstr "Alle Presseartikel"
-
-#: includes/class-coverage-cpt.php:197
-msgid "View Press Item"
-msgstr "Presseartikel ansehen"
-
-#: includes/class-coverage-cpt.php:198
-msgid "Search Press Items"
-msgstr "Presseartikel durchsuchen"
-
-#: includes/class-coverage-cpt.php:199
-msgid "No matching Press Item found"
-msgstr "Kein passender Presseartikel gefunden"
-
-#: includes/class-coverage-cpt.php:200
-msgid "No Press Items found in Trash"
-msgstr "Keine Presseartikel im Papierkorb gefunden"
-
-#: includes/class-coverage-cpt.php:211
-msgid "Press Coverage of Spirit of Football activities"
-msgstr "Presseberichterstattung über die Aktivitäten von Spirit of Football"
-
-#. translators: %s: The permalink.
-#: includes/class-coverage-cpt.php:275
-#, php-format
-msgid "Press Item updated. <a href=\"%s\">View Press Item</a>"
-msgstr "Presseartikel aktualisiert. <a href=\"%s\">Presseartikel ansehen</a>"
-
-#: includes/class-coverage-cpt.php:280 includes/class-resource-cpt.php:279
-msgid "Custom field updated."
-msgstr "Benutzerdefiniertes Feld aktualisiert."
-
-#: includes/class-coverage-cpt.php:281 includes/class-resource-cpt.php:280
-msgid "Custom field deleted."
-msgstr "Benutzerdefiniertes Feld gelöscht."
-
-#: includes/class-coverage-cpt.php:282
-msgid "Press Item updated."
-msgstr "Presseartikel aktualisiert."
-
-#. translators: %s: The date and time of the revision.
-#: includes/class-coverage-cpt.php:291
-#, php-format
-msgid "Press Item restored to revision from %s"
-msgstr "Presseartikel auf die Version vom %s zurückgesetzt"
-
-#. translators: %s: The permalink.
-#: includes/class-coverage-cpt.php:302
-#, php-format
-msgid "Press Item published. <a href=\"%s\">View Press Item</a>"
-msgstr "Presseartikel veröffentlicht. <a href=\"%s\">Presseartikel ansehen</a>"
-
-#: includes/class-coverage-cpt.php:307
-msgid "Press Item saved."
-msgstr "Presseartikel gespeichert."
-
-#. translators: %s: The permalink.
-#: includes/class-coverage-cpt.php:312
-#, php-format
-msgid ""
-"Press Item submitted. <a target=\"_blank\" href=\"%s\">Preview Press Item</a>"
-msgstr ""
-"Presseartikel wurde eingereicht. <a target=\"_blank\" href=\"%s\">Vorschau "
-"Presseartikel</a>"
-
-#. translators: 1: The date, 2: The permalink.
-#: includes/class-coverage-cpt.php:319
-#, php-format
-msgid ""
-"Press Item scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
-"href=\"%2$s\">Preview Press Item</a>"
-msgstr ""
-"Presseartikel geplant für: <strong>%1$s</strong>. <a target=\"_blank\" "
-"href=\"%2$s\">Vorschau Presseartikel</a>"
-
 #. translators: Publish box date format - see https://php.net/date
-#: includes/class-coverage-cpt.php:321 includes/class-resource-cpt.php:320
+#: includes/class-coverage-cpt.php:319 includes/class-resource-cpt.php:318
 msgid "M j, Y @ G:i"
 msgstr "M j, Y @ G:i"
 
+#: includes/class-coverage-cpt.php:193
+msgid "New Press Item"
+msgstr "Neuer Presseartikel"
+
+#: includes/class-coverage-cpt.php:515
+msgid "New Press Item Tag Name"
+msgstr "Neuer Schlagwortname"
+
+#: includes/class-coverage-cpt.php:392
+msgid "New Press Item Type Name"
+msgstr "Neuer Kategoriename"
+
+#: includes/class-resource-cpt.php:193
+msgid "New Press Resource"
+msgstr "Neue Presseressource"
+
+#: includes/class-resource-cpt.php:514
+msgid "New Press Resource Tag Name"
+msgstr "Neuer Schlagwortname"
+
+#: includes/class-resource-cpt.php:391
+msgid "New Press Resource Type Name"
+msgstr "Neuer Kategoriename"
+
+#: includes/class-coverage-cpt.php:197
+msgid "No matching Press Item found"
+msgstr "Kein passender Presseartikel gefunden"
+
+#: includes/class-resource-cpt.php:197
+msgid "No matching Press Resource found"
+msgstr "Keine passende Presseressource gefunden"
+
+#: includes/class-coverage-cpt.php:516
+msgid "No Press Item Tags found"
+msgstr "Keine Schlagwörter gefunden"
+
+#: includes/class-coverage-cpt.php:394
+msgid "No Press Item Types found"
+msgstr "Keine Kategorien gefunden"
+
+#: includes/class-coverage-cpt.php:198
+msgid "No Press Items found in Trash"
+msgstr "Keine Presseartikel im Papierkorb gefunden"
+
+#: includes/class-resource-cpt.php:515
+msgid "No Press Resource Tags found"
+msgstr "Keine Schlagwörter gefunden"
+
+#: includes/class-resource-cpt.php:393
+msgid "No Press Resource Types found"
+msgstr "Keine Kategorien gefunden"
+
+#: includes/class-resource-cpt.php:198
+msgid "No Press Resources found in Trash"
+msgstr "Keine Presseressourcen im Papierkorb gefunden"
+
+#: includes/class-coverage-cpt.php:387
+msgid "Parent Press Item Type"
+msgstr "Übergeordnete Kategorie"
+
+#: includes/class-coverage-cpt.php:388
+msgid "Parent Press Item Type:"
+msgstr "Übergeordnete Kategorie:"
+
+#: includes/class-resource-cpt.php:386
+msgid "Parent Press Resource Type"
+msgstr "Übergeordnete Kategorie"
+
+#: includes/class-resource-cpt.php:387
+msgid "Parent Press Resource Type:"
+msgstr "Übergeordnete Kategorie:"
+
+#: includes/class-coverage-cpt.php:517
+msgid "Popular Press Item Tags"
+msgstr "Beliebte Schlagwörter"
+
+#: includes/class-resource-cpt.php:516
+msgid "Popular Press Resource Tags"
+msgstr "Beliebte Schlagwörter"
+
+#: includes/class-coverage-cpt.php:188 includes/class-coverage-cpt.php:199
+msgid "Press Coverage"
+msgstr "Presseberichterstattung"
+
+#: includes/class-coverage-cpt.php:209
+msgid "Press Coverage of Spirit of Football activities"
+msgstr "Presseberichterstattung über die Aktivitäten von Spirit of Football"
+
+#: includes/class-coverage-cpt.php:189
+msgid "Press Item"
+msgstr "Presseartikel"
+
+#: includes/class-coverage-acf.php:139
+msgid "Press Item Details"
+msgstr "Presseartikeldetails"
+
 #. translators: %s: The permalink.
-#: includes/class-coverage-cpt.php:328
+#: includes/class-coverage-cpt.php:326
 #, php-format
 msgid ""
 "Press Item draft updated. <a target=\"_blank\" href=\"%s\">Preview Press "
@@ -211,253 +324,112 @@ msgstr ""
 "Entwurf des Presseartikels aktualisiert. <a target=\"_blank\" href=\"%s\">"
 "Vorschau Presseartikel</a>"
 
-#: includes/class-coverage-cpt.php:355
-msgid "Add an identifying name for the Press Item"
-msgstr "Geben Sie einen eindeutigen Namen für den Presseartikel an."
+#: includes/class-coverage-acf.php:276
+msgid "Press Item File"
+msgstr "Presseartikel-Datei"
 
-#: includes/class-coverage-cpt.php:385
-msgctxt "taxonomy general name"
-msgid "Press Item Types"
-msgstr ""
+#: includes/class-coverage-acf.php:252
+msgid "Press Item Image"
+msgstr "Presseartikelbild"
 
-#: includes/class-coverage-cpt.php:386
-msgctxt "taxonomy singular name"
-msgid "Press Item Type"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:387
-msgid "Search Press Item Types"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:388
-msgid "All Press Item Types"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:389
-msgid "Parent Press Item Type"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:390
-msgid "Parent Press Item Type:"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:391
-msgid "Edit Press Item Type"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:392
-msgid "Update Press Item Type"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:393
-msgid "Add New Press Item Type"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:394
-msgid "New Press Item Type Name"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:395
-msgid "Press Item Types"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:396
-msgid "No Press Item Types found"
-msgstr ""
-
-#. translators: %s: The plural name of the taxonomy terms.
-#: includes/class-coverage-cpt.php:468 includes/class-coverage-cpt.php:591
-#: includes/class-resource-cpt.php:467 includes/class-resource-cpt.php:590
+#. translators: %s: The permalink.
+#: includes/class-coverage-cpt.php:300
 #, php-format
-msgid "Show All %s"
-msgstr "Alle %s anzeigen"
+msgid "Press Item published. <a href=\"%s\">View Press Item</a>"
+msgstr "Presseartikel veröffentlicht. <a href=\"%s\">Presseartikel ansehen</a>"
 
-#: includes/class-coverage-cpt.php:508
-msgctxt "taxonomy general name"
-msgid "Press Item Tags"
+#. translators: %s: The date and time of the revision.
+#: includes/class-coverage-cpt.php:289
+#, php-format
+msgid "Press Item restored to revision from %s"
+msgstr "Presseartikel auf die Version vom %s zurückgesetzt"
+
+#: includes/class-coverage-cpt.php:305
+msgid "Press Item saved."
+msgstr "Presseartikel gespeichert."
+
+#. translators: 1: The date, 2: The permalink.
+#: includes/class-coverage-cpt.php:317
+#, php-format
+msgid ""
+"Press Item scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview Press Item</a>"
 msgstr ""
+"Presseartikel geplant für: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Vorschau Presseartikel</a>"
+
+#. translators: %s: The permalink.
+#: includes/class-coverage-cpt.php:310
+#, php-format
+msgid ""
+"Press Item submitted. <a target=\"_blank\" href=\"%s\">Preview Press Item</a>"
+msgstr ""
+"Presseartikel wurde eingereicht. <a target=\"_blank\" href=\"%s\">Vorschau "
+"Presseartikel</a>"
 
 #: includes/class-coverage-cpt.php:509
-msgctxt "taxonomy singular name"
-msgid "Press Item Tag"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:510
-msgid "Search Press Item Tags"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:511
-msgid "All Press Item Tags"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:512
-msgid "Parent Press Item Tag"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:513
-msgid "Parent Press Item Tag:"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:514
-msgid "Edit Press Item Tag"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:515
-msgid "Update Press Item Tag"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:516
-msgid "Add New Press Item Tag"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:517
-msgid "New Press Item Tag Name"
-msgstr ""
-
-#: includes/class-coverage-cpt.php:518
 msgid "Press Item Tags"
-msgstr ""
+msgstr "Schlagwörter"
 
-#: includes/class-coverage-cpt.php:519
-msgid "No Press Item Tags found"
-msgstr ""
+#: includes/class-coverage-cpt.php:393
+msgid "Press Item Types"
+msgstr "Kategorien"
+
+#: includes/class-coverage-cpt.php:280
+msgid "Press Item updated."
+msgstr "Presseartikel aktualisiert."
+
+#. translators: %s: The permalink.
+#: includes/class-coverage-cpt.php:273
+#, php-format
+msgid "Press Item updated. <a href=\"%s\">View Press Item</a>"
+msgstr "Presseartikel aktualisiert. <a href=\"%s\">Presseartikel ansehen</a>"
+
+#: includes/class-resource-cpt.php:189
+msgid "Press Resource"
+msgstr "Presse-Ressource"
 
 #: includes/class-resource-acf.php:139
 msgid "Press Resource Details"
 msgstr "Details der Presse-Ressource"
 
-#: includes/class-resource-acf.php:175
-msgid "About this Press Resource"
-msgstr "Über diese Presseressource"
-
-#: includes/class-resource-acf.php:176
+#. translators: %s: The permalink.
+#: includes/class-resource-cpt.php:325
+#, php-format
 msgid ""
-"If you need a general description of this Press Resource, use this field."
+"Press Resource draft updated. <a target=\"_blank\" href=\"%s\">Preview Press "
+"Resource</a>"
 msgstr ""
-"Wenn Sie eine allgemeine Beschreibung dieser Presseressource benötigen, "
-"verwenden Sie dieses Feld."
-
-#: includes/class-resource-acf.php:190
-msgid "Press Resource Image"
-msgstr "Presseressourcenbild"
-
-#: includes/class-resource-acf.php:191
-msgid "Feature Image of the Press Resource."
-msgstr "Titelbild der Presseressource."
+"Entwurf der Presseressource aktualisiert. <a target=\"_blank\" href=\"%s\">"
+"Vorschau Presseressource</a>"
 
 #: includes/class-resource-acf.php:213
 msgid "Press Resource Files"
 msgstr "Presseressourcendateien"
 
-#: includes/class-resource-acf.php:214
-msgid "Downloadable Files for this Press Resource."
-msgstr "Herunterladbare Dateien für diese Presseressource."
-
-#: includes/class-resource-acf.php:228
-msgid "Add Press Resource File"
-msgstr "Presseressourcendatei hinzufügen"
-
-#: includes/class-resource-acf.php:237
-msgid "File"
-msgstr "Datei"
-
-#: includes/class-resource-acf.php:238
-msgid "The Downloadable File itself."
-msgstr "Die herunterladbare Datei selbst."
-
-#: includes/class-resource-acf.php:257
-msgid "File Preview"
-msgstr "Dateivorschau"
-
-#: includes/class-resource-acf.php:258
-msgid "An optional Image that shows a preview of the Downloadable File."
-msgstr ""
-"Ein optionales Bild, das eine Vorschau der herunterladbaren Datei anzeigt."
-
-#: includes/class-resource-cpt.php:190 includes/class-resource-cpt.php:201
-msgid "Press Resources"
-msgstr "Presseressourcen"
-
-#: includes/class-resource-cpt.php:191
-msgid "Press Resource"
-msgstr "Presse-Ressource"
-
-#: includes/class-resource-cpt.php:193
-msgid "Add New Press Resource"
-msgstr "Neue Presseressource hinzufügen"
-
-#: includes/class-resource-cpt.php:194
-msgid "Edit Press Resource"
-msgstr "Presse-Ressource bearbeiten"
-
-#: includes/class-resource-cpt.php:195
-msgid "New Press Resource"
-msgstr "Neue Presseressource"
-
-#: includes/class-resource-cpt.php:196
-msgid "All Press Resources"
-msgstr "Alle Presseressourcen"
-
-#: includes/class-resource-cpt.php:197
-msgid "View Press Resource"
-msgstr "Presseressource anzeigen"
-
-#: includes/class-resource-cpt.php:198
-msgid "Search Press Resources"
-msgstr "Presseressourcen durchsuchen"
-
-#: includes/class-resource-cpt.php:199
-msgid "No matching Press Resource found"
-msgstr "Keine passende Presseressource gefunden"
-
-#: includes/class-resource-cpt.php:200
-msgid "No Press Resources found in Trash"
-msgstr "Keine Presseressourcen im Papierkorb gefunden"
-
-#: includes/class-resource-cpt.php:211
-msgid "A press item post type"
-msgstr "Ein Presseartikel-Posttyp"
+#: includes/class-resource-acf.php:190
+msgid "Press Resource Image"
+msgstr "Presseressourcenbild"
 
 #. translators: %s: The permalink.
-#: includes/class-resource-cpt.php:274
-#, php-format
-msgid "Press Resource updated. <a href=\"%s\">View Press Resource</a>"
-msgstr ""
-"Presseressource aktualisiert. <a href=\"%s\">Vorschau Presseressource</a>"
-
-#: includes/class-resource-cpt.php:281
-msgid "Press Resource updated."
-msgstr "Presseressource aktualisiert."
-
-#. translators: %s: The date and time of the revision.
-#: includes/class-resource-cpt.php:290
-#, php-format
-msgid "Press Resource restored to revision from %s"
-msgstr "Presseressource auf die Version von %s zurückgesetzt."
-
-#. translators: %s: The permalink.
-#: includes/class-resource-cpt.php:301
+#: includes/class-resource-cpt.php:299
 #, php-format
 msgid "Press Resource published. <a href=\"%s\">View Press Resource</a>"
 msgstr ""
 "Presseressource veröffentlicht. <a href=\"%s\">Presseressource ansehen</a>"
 
-#: includes/class-resource-cpt.php:306
+#. translators: %s: The date and time of the revision.
+#: includes/class-resource-cpt.php:288
+#, php-format
+msgid "Press Resource restored to revision from %s"
+msgstr "Presseressource auf die Version von %s zurückgesetzt."
+
+#: includes/class-resource-cpt.php:304
 msgid "Press Resource saved."
 msgstr "Presseressource gespeichert."
 
-#. translators: %s: The permalink.
-#: includes/class-resource-cpt.php:311
-#, php-format
-msgid ""
-"Press Resource submitted. <a target=\"_blank\" href=\"%s\">Preview Press "
-"Resource</a>"
-msgstr ""
-"Presseressource wurde eingereicht. <a target=\"_blank\" href=\"%s\">Vorschau "
-"Presseressource</a>"
-
 #. translators: 1: The date, 2: The permalink.
-#: includes/class-resource-cpt.php:318
+#: includes/class-resource-cpt.php:316
 #, php-format
 msgid ""
 "Press Resource scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
@@ -467,115 +439,158 @@ msgstr ""
 "href=\"%2$s\">Vorschau Presseressource</a>"
 
 #. translators: %s: The permalink.
-#: includes/class-resource-cpt.php:327
+#: includes/class-resource-cpt.php:309
 #, php-format
 msgid ""
-"Press Resource draft updated. <a target=\"_blank\" href=\"%s\">Preview Press "
+"Press Resource submitted. <a target=\"_blank\" href=\"%s\">Preview Press "
 "Resource</a>"
 msgstr ""
-"Entwurf der Presseressource aktualisiert. <a target=\"_blank\" href=\"%s\">"
-"Vorschau Presseressource</a>"
-
-#: includes/class-resource-cpt.php:354
-msgid "Add an identifying name for the Press Resource"
-msgstr "Geben Sie einen eindeutigen Namen für die Presse-Ressource ein."
-
-#: includes/class-resource-cpt.php:384
-msgctxt "taxonomy general name"
-msgid "Press Resource Types"
-msgstr ""
-
-#: includes/class-resource-cpt.php:385
-msgctxt "taxonomy singular name"
-msgid "Press Resource Type"
-msgstr ""
-
-#: includes/class-resource-cpt.php:386
-msgid "Search Press Resource Types"
-msgstr ""
-
-#: includes/class-resource-cpt.php:387
-msgid "All Press Resource Types"
-msgstr ""
-
-#: includes/class-resource-cpt.php:388
-msgid "Parent Press Resource Type"
-msgstr ""
-
-#: includes/class-resource-cpt.php:389
-msgid "Parent Press Resource Type:"
-msgstr ""
-
-#: includes/class-resource-cpt.php:390
-msgid "Edit Press Resource Type"
-msgstr ""
-
-#: includes/class-resource-cpt.php:391
-msgid "Update Press Resource Type"
-msgstr ""
-
-#: includes/class-resource-cpt.php:392
-msgid "Add New Press Resource Type"
-msgstr ""
-
-#: includes/class-resource-cpt.php:393
-msgid "New Press Resource Type Name"
-msgstr ""
-
-#: includes/class-resource-cpt.php:394
-msgid "Press Resource Types"
-msgstr ""
-
-#: includes/class-resource-cpt.php:395
-msgid "No Press Resource Types found"
-msgstr ""
-
-#: includes/class-resource-cpt.php:507
-msgctxt "taxonomy general name"
-msgid "Press Resource Tags"
-msgstr ""
+"Presseressource wurde eingereicht. <a target=\"_blank\" href=\"%s\">Vorschau "
+"Presseressource</a>"
 
 #: includes/class-resource-cpt.php:508
-msgctxt "taxonomy singular name"
-msgid "Press Resource Tag"
+msgid "Press Resource Tags"
+msgstr "Schlagwörter"
+
+#: includes/class-resource-cpt.php:392
+msgid "Press Resource Types"
+msgstr "Kategorien"
+
+#: includes/class-resource-cpt.php:279
+msgid "Press Resource updated."
+msgstr "Presseressource aktualisiert."
+
+#. translators: %s: The permalink.
+#: includes/class-resource-cpt.php:272
+#, php-format
+msgid "Press Resource updated. <a href=\"%s\">View Press Resource</a>"
 msgstr ""
+"Presseressource aktualisiert. <a href=\"%s\">Vorschau Presseressource</a>"
+
+#: includes/class-resource-cpt.php:188 includes/class-resource-cpt.php:199
+msgid "Press Resources"
+msgstr "Presseressourcen"
+
+#. Description of the plugin
+#: sof-press.php
+msgid "Provides \"Press\" functionality for the Spirit of Football website."
+msgstr ""
+
+#: includes/class-coverage-acf.php:177
+msgid "Publisher"
+msgstr "Herausgeber*in"
+
+#: includes/class-coverage-cpt.php:510
+msgid "Search Press Item Tags"
+msgstr "Schlagwörter suchen"
+
+#: includes/class-coverage-cpt.php:385
+msgid "Search Press Item Types"
+msgstr "Kategorien suchen"
+
+#: includes/class-coverage-cpt.php:196
+msgid "Search Press Items"
+msgstr "Presseartikel durchsuchen"
 
 #: includes/class-resource-cpt.php:509
 msgid "Search Press Resource Tags"
-msgstr ""
+msgstr "Schlagwörter suchen"
 
-#: includes/class-resource-cpt.php:510
-msgid "All Press Resource Tags"
-msgstr ""
+#: includes/class-resource-cpt.php:384
+msgid "Search Press Resource Types"
+msgstr "Kategorien suchen"
 
-#: includes/class-resource-cpt.php:511
-msgid "Parent Press Resource Tag"
-msgstr ""
+#: includes/class-resource-cpt.php:196
+msgid "Search Press Resources"
+msgstr "Presseressourcen durchsuchen"
 
-#: includes/class-resource-cpt.php:512
-msgid "Parent Press Resource Tag:"
-msgstr ""
-
-#: includes/class-resource-cpt.php:513
-msgid "Edit Press Resource Tag"
-msgstr ""
-
-#: includes/class-resource-cpt.php:514
-msgid "Update Press Resource Tag"
-msgstr ""
-
-#: includes/class-resource-cpt.php:515
-msgid "Add New Press Resource Tag"
-msgstr ""
-
-#: includes/class-resource-cpt.php:516
-msgid "New Press Resource Tag Name"
-msgstr ""
+#: includes/class-coverage-cpt.php:518
+msgid "Separate Press Item Tags with commas"
+msgstr "Schlagwörter mit Kommas trennen"
 
 #: includes/class-resource-cpt.php:517
-msgid "Press Resource Tags"
-msgstr ""
+msgid "Separate Press Resource Tags with commas"
+msgstr "Schlagwörter mit Kommas trennen"
 
-#: includes/class-resource-cpt.php:518
-msgid "No Press Resource Tags found"
-msgstr ""
+#. translators: %s: The plural name of the taxonomy terms.
+#: includes/class-coverage-cpt.php:466 includes/class-resource-cpt.php:465
+#, php-format
+msgid "Show All %s"
+msgstr "Alle %s anzeigen"
+
+#. Plugin Name of the plugin
+#: sof-press.php
+msgid "SOF Press"
+msgstr "SOF Press"
+
+#: includes/class-coverage-cpt.php:507
+msgctxt "taxonomy general name"
+msgid "Press Item Tags"
+msgstr "Schlagwörter"
+
+#: includes/class-coverage-cpt.php:383
+msgctxt "taxonomy general name"
+msgid "Press Item Types"
+msgstr "Kategorien"
+
+#: includes/class-resource-cpt.php:506
+msgctxt "taxonomy general name"
+msgid "Press Resource Tags"
+msgstr "Schlagwörter"
+
+#: includes/class-resource-cpt.php:382
+msgctxt "taxonomy general name"
+msgid "Press Resource Types"
+msgstr "Kategorien"
+
+#: includes/class-coverage-cpt.php:508
+msgctxt "taxonomy singular name"
+msgid "Press Item Tag"
+msgstr "Schlagwort"
+
+#: includes/class-coverage-cpt.php:384
+msgctxt "taxonomy singular name"
+msgid "Press Item Type"
+msgstr "Kategorie"
+
+#: includes/class-resource-cpt.php:507
+msgctxt "taxonomy singular name"
+msgid "Press Resource Tag"
+msgstr "Schlagwort"
+
+#: includes/class-resource-cpt.php:383
+msgctxt "taxonomy singular name"
+msgid "Press Resource Type"
+msgstr "Kategorie"
+
+#: includes/class-resource-acf.php:238
+msgid "The Downloadable File itself."
+msgstr "Die herunterladbare Datei selbst."
+
+#: includes/class-coverage-cpt.php:513
+msgid "Update Press Item Tag"
+msgstr "Schlagwort aktualisieren"
+
+#: includes/class-coverage-cpt.php:390
+msgid "Update Press Item Type"
+msgstr "Kategorie aktualisieren"
+
+#: includes/class-resource-cpt.php:512
+msgid "Update Press Resource Tag"
+msgstr "Schlagwort aktualisieren"
+
+#: includes/class-resource-cpt.php:389
+msgid "Update Press Resource Type"
+msgstr "Kategorie aktualisieren"
+
+#: includes/class-coverage-cpt.php:195
+msgid "View Press Item"
+msgstr "Presseartikel ansehen"
+
+#: includes/class-resource-cpt.php:195
+msgid "View Press Resource"
+msgstr "Presseressource anzeigen"
+
+#: includes/class-coverage-acf.php:178
+msgid "Who published this Press Item? Examples: CNN, BBC, etc."
+msgstr "Wer hat diesen Presseartikel veröffentlicht? Beispiele: CNN, BBC usw."
