@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-09-07T11:56:56+00:00\n"
-"PO-Revision-Date: 2025-09-09 10:23+0000\n"
+"PO-Revision-Date: 2025-09-09 10:49+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: sof-press\n"
 "Language: de_DE\n"
@@ -35,7 +35,7 @@ msgstr "Geben Sie einen eindeutigen Namen für den Presseartikel an."
 
 #: includes/class-resource-cpt.php:352
 msgid "Add an identifying name for the Press Resource"
-msgstr "Geben Sie einen eindeutigen Namen für die Presse-Ressource ein."
+msgstr "Geben Sie einen eindeutigen Namen für die Presseressource ein."
 
 #: includes/class-coverage-cpt.php:190 includes/class-resource-cpt.php:190
 msgid "Add New"
@@ -55,7 +55,7 @@ msgstr "Kategorie hinzufügen"
 
 #: includes/class-resource-cpt.php:191
 msgid "Add New Press Resource"
-msgstr "Neue Presseressource hinzufügen"
+msgstr "Presseressource hinzufügen"
 
 #: includes/class-resource-cpt.php:513
 msgid "Add New Press Resource Tag"
@@ -161,7 +161,7 @@ msgstr "Kategorie bearbeiten"
 
 #: includes/class-resource-cpt.php:192
 msgid "Edit Press Resource"
-msgstr "Presse-Ressource bearbeiten"
+msgstr "Presseressource bearbeiten"
 
 #: includes/class-resource-cpt.php:511
 msgid "Edit Press Resource Tag"
@@ -300,11 +300,11 @@ msgstr "Beliebte Schlagwörter"
 
 #: includes/class-coverage-cpt.php:188 includes/class-coverage-cpt.php:199
 msgid "Press Coverage"
-msgstr "Presseberichterstattung"
+msgstr "Presseberichte"
 
 #: includes/class-coverage-cpt.php:209
 msgid "Press Coverage of Spirit of Football activities"
-msgstr "Presseberichterstattung über die Aktivitäten von Spirit of Football"
+msgstr "Presseberichte über die Aktivitäten von Spirit of Football"
 
 #: includes/class-coverage-cpt.php:189
 msgid "Press Item"
@@ -387,11 +387,11 @@ msgstr "Presseartikel aktualisiert. <a href=\"%s\">Presseartikel ansehen</a>"
 
 #: includes/class-resource-cpt.php:189
 msgid "Press Resource"
-msgstr "Presse-Ressource"
+msgstr "Presseressource"
 
 #: includes/class-resource-acf.php:139
 msgid "Press Resource Details"
-msgstr "Details der Presse-Ressource"
+msgstr "Details der Presseressource"
 
 #. translators: %s: The permalink.
 #: includes/class-resource-cpt.php:325
